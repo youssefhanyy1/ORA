@@ -5,16 +5,6 @@
 // â”€â”€ Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
 const PRODUCTS = [
   {
-    id: 0,
-    name: "Cartier Santos Black Rubber",
-    category: "watches",
-    price: 395,
-    num: "I",
-    desc: "Black dial with silver bezel, premium rubber strap, iconic square Cartier Santos profile",
-    badge: "New",
-    img: "assets/products/cartier-santos-black-rubber.jpeg"
-  },
-  {
     id: 7,
     name: "Tommy Hilfiger White Dial Metal",
     category: "watches",
@@ -34,26 +24,7 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/tommy-hilfiger-black-dial-metal.jpeg"
   },
-  {
-    id: 9,
-    name: "Rolex Datejust White Diamond",
-    category: "watches",
-    price: 380,
-    num: "IV",
-    desc: "White dial with crystal diamond markers, date magnifier lens, comfortable jubilee bracelet, with Rolex box and bag",
-    badge: "New",
-    img: "assets/products/rolex-datejust-white-diamond.jpeg"
-  },
-  {
-    id: 10,
-    name: "Omega Seamaster Black Leather",
-    category: "watches",
-    price: 350,
-    num: "V",
-    desc: "Black leather strap, day-date display, black and chrome finish, with Omega box and bag",
-    badge: "New",
-    img: "assets/products/omega-seamaster-black-leather.jpeg"
-  },
+
   {
     id: 11,
     name: "Tommy Hilfiger Black Leather",
@@ -64,26 +35,7 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/tommy-hilfiger-black-leather.jpeg"
   },
-  {
-    id: 12,
-    name: "Patek Philippe Nautilus White Dial",
-    category: "watches",
-    price: 330,
-    num: "VII",
-    desc: "Striped white dial, slim Nautilus profile, secure double clasp, with Patek Philippe box and bag",
-    badge: "New",
-    img: "assets/products/patek-philippe-nautilus-white-dial.jpeg"
-  },
-  {
-    id: 13,
-    name: "Tissot Chronograph White Dial",
-    category: "watches",
-    price: 330,
-    num: "VIII",
-    desc: "White chronograph dial, external tachymeter bezel, bright silver tone, with Tissot box and bag",
-    badge: "New",
-    img: "assets/products/tissot-chronograph-white-dial.jpeg"
-  },
+
   {
     id: 14,
     name: "Louis Vuitton Symphony",
