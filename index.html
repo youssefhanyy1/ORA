@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORA — Define Your Presence</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700&family=Outfit:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: 'class',
+        theme: { extend: { colors: { gold: { DEFAULT: '#E2A98B', light: '#F4CBB7', pale: '#FCEFE8' } } } }
+      }
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/extra.css">
+</head>
+<body class="home-page">
+
+
+    <canvas id="bg-canvas"></canvas>
+
+    <div class="orb-layer" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+        <div class="orb orb-4"></div>
+    </div>
+    <div class="diamonds-layer" aria-hidden="true">
+        <div class="diamond"></div><div class="diamond"></div><div class="diamond"></div>
+        <div class="diamond"></div><div class="diamond"></div><div class="diamond"></div>
+        <div class="diamond"></div><div class="diamond"></div>
+    </div>
+    <div class="scanline" aria-hidden="true"></div>
+
+    <div class="page-wrap">
+
+        <!-- NAVBAR -->
+        <header class="navbar" id="navbar">
+            <a href="index.html" class="logo"><img src="LOGO/ORAlogo.jpeg" alt="ORA" class="logo-img"><span class="logo-text">ORA</span></a>
+            <nav class="nav-links" id="nav-links">
+                <a href="index.html" class="active" data-i18n="home">Home</a>
+                <a href="index.html#products" data-i18n="collection">Collection</a>
+                <a href="services.html" data-i18n="services">Services</a>
+                <a href="about.html" data-i18n="our_story">Our Story</a>
+                <a href="faq.html" data-i18n="faq">FAQ</a>
+                <a href="contact.html" data-i18n="contact">Contact</a>
+            </nav>
+            <div class="nav-right">
+                <button class="lang-toggle" id="lang-toggle" aria-label="Toggle Language">عربي</button>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                    <svg class="sun-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+                    <svg class="moon-icon" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+                </button>
+                <button class="cart-trigger" id="cart-trigger" aria-label="Open Cart">
+                    <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/>
+                        <line x1="3" y1="6" x2="21" y2="6"/>
+                        <path d="M16 10a4 4 0 0 1-8 0"/>
+                    </svg>
+                    <span class="badge" id="cart-badge">0</span>
+                </button>
+                <button class="menu-trigger" id="menu-trigger" aria-label="Menu" aria-expanded="false" aria-controls="nav-links">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- HERO -->
+        <section id="hero" class="home-hero">
+            <canvas id="hero-motion-canvas" aria-hidden="true"></canvas>
+            <div class="hero-motion-shell" aria-hidden="true">
+                <div class="hero-grid-plane"></div>
+                <div class="hero-light-sweep"></div>
+                <div class="hero-metal-ring ring-a"></div>
+                <div class="hero-metal-ring ring-b"></div>
+            </div>
+            <div class="hero-line-top"></div>
+            <div class="hero-line-bottom"></div>
+            <div class="hero-rule-left"></div>
+            <div class="hero-rule-right"></div>
+            <div class="spline-container">
+              <script type="module" src="https://unpkg.com/@splinetool/viewer@1.12.90/build/spline-viewer.js" async></script>
+              <spline-viewer hint loading-anim-type="spinner-small-dark" url="https://prod.spline.design/LfPaiWJFwjgycDaD/scene.splinecode"></spline-viewer>
+            </div>
+            <div class="hero-layout">
+                <div class="hero-content">
+                    <p class="hero-eyebrow" data-i18n="new_collection">New Collection — 2025</p>
+                    <h1 data-i18n="crafted_for">Crafted for the<br><em>Discerning Few</em></h1>
+                    <p class="hero-copy" data-i18n="hero_copy">A cinematic curation of watches and fragrances, selected for people who notice quiet details.</p>
+                    <div class="hero-actions">
+                        <button class="hero-cta" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+                            <span data-i18n="explore_collection">Explore Collection</span>
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                        </button>
+                        <a class="hero-secondary" href="#atelier" data-i18n="hero_secondary">Find Signature</a>
+                    </div>
+                    <div class="hero-proof-row" aria-label="ORA guarantees">
+                        <span data-i18n="hero_proof_auth">Authenticated</span>
+                        <span data-i18n="hero_proof_ship">Cairo Delivery</span>
+                        <span data-i18n="hero_proof_care">Lifetime Care</span>
+                    </div>
+                </div>
+
+                <div class="hero-showcase" aria-label="Featured ORA pieces">
+                    <button class="hero-product-tile tile-primary" type="button" data-view-id="0">
+                        <img src="assets/products/cartier-santos-black-rubber.jpeg" alt="Cartier Santos Black Rubber">
+                        <span data-i18n="hero_tile_watch">Cartier Santos</span>
+                        <strong>395 EGP</strong>
+                    </button>
+                    <button class="hero-product-tile tile-secondary" type="button" data-view-id="14">
+                        <img src="assets/products/louis-vuitton-symphony.jpeg" alt="Louis Vuitton Symphony">
+                        <span data-i18n="hero_tile_perfume">Louis Vuitton Symphony</span>
+                        <strong data-i18n="price_on_request">Price on request</strong>
+                    </button>
+                    <div class="hero-floating-note">
+                        <span data-i18n="hero_note_kicker">Atelier Pick</span>
+                        <strong data-i18n="hero_note_title">Evening Pairing</strong>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-hint" aria-hidden="true">
+                <span>Scroll</span>
+                <div class="scroll-line"></div>
+            </div>
+        </section>
+
+        <!-- MARQUEE -->
+        <div class="marquee-strip" aria-hidden="true">
+            <div class="marquee-track" id="marquee-track"></div>
+        </div>
+
+        <!-- VALUES SECTION -->
+        <section class="values-section">
+            <div class="values-title reveal">
+                <h2 data-i18n="the_maison_promise">The <em>ORA</em> Promise</h2>
+                <p data-i18n="four_pillars">Four pillars of uncompromising excellence</p>
+            </div>
+            <div class="values-grid">
+                <div class="value-card reveal reveal-delay-1">
+                    <span class="value-icon">◈</span>
+                    <span class="value-name" data-i18n="auth_name">Authenticity</span>
+                    <span class="value-detail" data-i18n="auth_detail">Every piece is certified genuine, sourced from verified artisans worldwide</span>
+                </div>
+                <div class="value-card reveal reveal-delay-2">
+                    <span class="value-icon">◇</span>
+                    <span class="value-name" data-i18n="craft_name">Craftsmanship</span>
+                    <span class="value-detail" data-i18n="craft_detail">Meticulous attention to detail in every stitch, dial, and fragrance note</span>
+                </div>
+                <div class="value-card reveal reveal-delay-3">
+                    <span class="value-icon">◎</span>
+                    <span class="value-name" data-i18n="excl_name">Exclusivity</span>
+                    <span class="value-detail" data-i18n="excl_detail">Limited editions and curated selections for the truly discerning</span>
+                </div>
+                <div class="value-card reveal reveal-delay-4">
+                    <span class="value-icon">◉</span>
+                    <span class="value-name" data-i18n="serv_name">Service</span>
+                    <span class="value-detail" data-i18n="serv_detail">White-glove concierge experience from selection to doorstep delivery</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- FEATURED BANNER -->
+        <div class="featured-banner reveal">
+            <div class="featured-text">
+                <p class="featured-eyebrow" data-i18n="sig_collection">Signature Collection</p>
+                <h2 data-i18n="art_of_time">The Art of <em>Timekeeping</em></h2>
+                <p data-i18n="each_timepiece">Each timepiece in our collection represents decades of horological mastery — a convergence of precision engineering and sculptural beauty.</p>
+                <button class="featured-cta" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
+                    <span data-i18n="view_watches">View Watches</span>
+                    <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+            </div>
+            <div class="featured-img-wrap">
+                <img src="assets/products/rolex-datejust-white-diamond.jpeg" alt="Featured Watch Collection">
+            </div>
+        </div>
+
+        <!-- SIGNATURE FINDER -->
+        <section class="atelier-section reveal" id="atelier">
+            <div class="atelier-copy">
+                <p class="section-kicker" data-i18n="finder_kicker">Private Atelier</p>
+                <h2 data-i18n="finder_title">Find your <em>signature</em></h2>
+                <p data-i18n="finder_desc">Choose a mood and ORA will compose a refined pairing from the collection.</p>
+                <div class="finder-controls" role="group" aria-label="Signature finder">
+                    <button class="finder-chip active" type="button" data-finder="evening" data-i18n="finder_evening">Evening</button>
+                    <button class="finder-chip" type="button" data-finder="daily" data-i18n="finder_daily">Daily</button>
+                    <button class="finder-chip" type="button" data-finder="gift" data-i18n="finder_gift">Gift</button>
+                    <button class="finder-chip" type="button" data-finder="collector" data-i18n="finder_collector">Collector</button>
+                </div>
+            </div>
+            <div class="finder-showcase" id="finder-showcase" aria-live="polite"></div>
+        </section>
+
+        <!-- PRODUCTS -->
+        <section id="products">
+            <div class="section-header">
+                <h2 class="section-title" data-i18n="the_collection">The <em>Collection</em></h2>
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all" data-i18n="all">All</button>
+                    <button class="filter-btn" data-filter="watches" data-i18n="watches">Watches</button>
+                    <button class="filter-btn" data-filter="perfumes" data-i18n="perfumes">Perfumes</button>
+                </div>
+            </div>
+            <div class="collection-toolbar reveal">
+                <label class="sr-only" for="product-search" data-i18n="search_products">Search products</label>
+                <div class="search-field">
+                    <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                    <input id="product-search" type="search" data-i18n-placeholder="search_placeholder" placeholder="Search watches, oud, rose...">
+                </div>
+                <label class="sr-only" for="product-sort" data-i18n="sort_label">Sort products</label>
+                <select id="product-sort" class="sort-select" aria-label="Sort products">
+                    <option value="featured" data-i18n="sort_featured">Featured</option>
+                    <option value="price-asc" data-i18n="sort_price_low">Price: Low to High</option>
+                    <option value="price-desc" data-i18n="sort_price_high">Price: High to Low</option>
+                    <option value="name" data-i18n="sort_name">Name</option>
+                </select>
+                <span class="products-count" id="products-count" aria-live="polite">6 items</span>
+            </div>
+            <div class="products-grid" id="products-grid"></div>
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="site-footer">
+            <div class="footer-brand"><img src="LOGO/ORAlogo.jpeg" alt="ORA" class="footer-logo-img">ORA</div>
+            <div class="footer-links">
+                <a href="index.html" data-i18n="home">Home</a>
+                <a href="index.html#products" data-i18n="shop">Shop</a>
+                <a href="services.html" data-i18n="services">Services</a>
+                <a href="faq.html" data-i18n="faq">FAQ</a>
+                <a href="policies.html" data-i18n="policies">Policies</a>
+                <a href="contact.html" data-i18n="contact">Contact</a>
+            </div>
+            <div class="footer-copy" data-i18n="rights_reserved">© 2025 ORA · All rights reserved</div>
+        </footer>
+
+    </div><!-- /page-wrap -->
+
+    <!-- CART OVERLAY -->
+    <div class="cart-overlay" id="cart-overlay" aria-hidden="true"></div>
+
+    <!-- QUICK VIEW -->
+    <div class="quickview-overlay" id="quickview-overlay" aria-hidden="true"></div>
+    <section class="quickview-modal" id="quickview-modal" role="dialog" aria-modal="true" aria-labelledby="quickview-title">
+        <button class="quickview-close" id="quickview-close" type="button" aria-label="Close">✕</button>
+        <div class="quickview-content" id="quickview-content"></div>
+    </section>
+
+    <!-- CART SIDEBAR -->
+    <aside class="cart-sidebar" id="cart-sidebar" aria-label="Shopping cart">
+        <div class="cart-header">
+            <div class="cart-header-left">
+                <h2 data-i18n="cart">Cart</h2>
+                <div class="cart-count-sub" id="cart-count-sub" data-i18n="empty">Empty</div>
+            </div>
+            <button class="close-cart" id="close-cart-btn" aria-label="Close">✕</button>
+        </div>
+        <div class="cart-items" id="cart-items">
+            <div class="cart-empty">
+                <div class="cart-empty-glyph">◇</div>
+                <p data-i18n="cart_empty">Your cart is empty</p>
+            </div>
+        </div>
+        <div class="cart-footer">
+            <div class="summary-row">
+                <span class="summary-label" data-i18n="subtotal">Subtotal</span>
+                <span class="summary-val" id="cart-subtotal">0 EGP</span>
+            </div>
+            <div class="summary-row">
+                <span class="summary-label" data-i18n="shipping">Shipping</span>
+                <span class="summary-val" id="cart-shipping">0 EGP</span>
+            </div>
+            <div class="cart-divider"></div>
+            <div class="total-row">
+                <span class="total-label" data-i18n="total">Total</span>
+                <span class="total-amount" id="cart-total">0 EGP</span>
+            </div>
+            <button class="checkout-btn" id="checkout-btn">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+                <span data-i18n="order_whatsapp">Order via WhatsApp</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- TOAST -->
+    <div class="toast" id="toast" role="status" aria-live="polite">
+        <div class="toast-diamond"></div>
+        <span id="toast-text"></span>
+    </div>
+
+    <div class="floating-actions" aria-label="Quick actions">
+        <a class="floating-action whatsapp-action" href="https://wa.me/201005311879" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/></svg>
+        </a>
+        <button class="floating-action back-to-top" id="back-to-top" type="button" aria-label="Back to top">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m18 15-6-6-6 6"/></svg>
+        </button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/lang.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
