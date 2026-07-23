@@ -24,7 +24,6 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/tommy-hilfiger-black-dial-metal.jpeg"
   },
-
   {
     id: 11,
     name: "Tommy Hilfiger Black Leather",
@@ -35,7 +34,6 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/tommy-hilfiger-black-leather.jpeg"
   },
-
   {
     id: 14,
     name: "Louis Vuitton Symphony",
