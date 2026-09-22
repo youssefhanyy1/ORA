@@ -1,40 +1,12 @@
-/* =====================================================
-   ORA â€” Premium JS v3
+﻿/* =====================================================
+   TARAF — Premium JS v3
    ===================================================== */
 
-// â”€â”€ Data â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ──── Data ────────────────────────────────────────────────────────────────────────────────────────────
 const PRODUCTS = [
-  {
-    id: 7,
-    name: "Tommy Hilfiger White Dial Metal",
-    category: "watches",
-    price: 380,
-    num: "II",
-    desc: "White dial, stainless steel bracelet, detailed sub-dial styling, precise quartz movement, with Tommy Hilfiger box and bag",
-    badge: "New",
-    img: "assets/products/tommy-hilfiger-metal-bracelet.jpeg"
-  },
-  {
-    id: 8,
-    name: "Tommy Hilfiger Black Dial Metal",
-    category: "watches",
-    price: 380,
-    num: "III",
-    desc: "Black dial, stainless steel bracelet, detailed sub-dial styling, precise quartz movement, with Tommy Hilfiger box and bag",
-    badge: "New",
-    img: "assets/products/tommy-hilfiger-black-dial-metal.jpeg"
-  },
-  {
-    id: 11,
-    name: "Tommy Hilfiger Black Leather",
-    category: "watches",
-    price: 350,
-    num: "VI",
-    desc: "Black leather strap, modern silver dial, day-date display, lightweight streamlined design, with Tommy Hilfiger box and bag",
-    badge: "New",
-    img: "assets/products/tommy-hilfiger-black-leather.jpeg"
-  },
-  {
+  
+  
+{
     id: 14,
     name: "Louis Vuitton Symphony",
     category: "perfumes",
@@ -44,30 +16,13 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/louis-vuitton-symphony.jpeg",
     variants: [
-      { label: "30 ml", arLabel: "الحجم 30 مل", price: 180 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 240 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 380 },
-      { label: "Tester 5 ml", arLabel: "تستر 5 مل", price: 35 },
-      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 55 },
+      { label: "30 ml", arLabel: "الحجم 30 مل", price: 210 },
+      { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
+      { label: "100 ml", arLabel: "الحجم 100 مل", price: 385 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
     ]
   },
-  {
-    id: 15,
-    name: "Sospiro Vibrato",
-    category: "perfumes",
-    price: null,
-    num: "II",
-    desc: "Bergamot, grapefruit, warm ginger, magnolia, jasmine, powdery woods, patchouli, orris, and amber",
-    badge: "New",
-    img: "assets/products/sospiro-vibrato.jpeg",
-    variants: [
-      { label: "30 ml", arLabel: "الحجم 30 مل", price: 180 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 240 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 380 },
-      { label: "Tester 5 ml", arLabel: "تستر 5 مل", price: 35 },
-      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 55 },
-    ]
-  },
+
   {
     id: 16,
     name: "Erba Pura",
@@ -78,11 +33,10 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/erba-pura.jpeg",
     variants: [
-      { label: "30 ml", arLabel: "الحجم 30 مل", price: 190 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 250 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 390 },
-      { label: "Tester 5 ml", arLabel: "تستر 5 مل", price: 40 },
-      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 60 },
+      { label: "30 ml", arLabel: "الحجم 30 مل", price: 210 },
+      { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
+      { label: "100 ml", arLabel: "الحجم 100 مل", price: 385 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
     ]
   },
   {
@@ -95,11 +49,10 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/dior-sauvage.jpeg",
     variants: [
-      { label: "30 ml", arLabel: "الحجم 30 مل", price: 180 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 240 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 380 },
-      { label: "Tester 5 ml", arLabel: "تستر 5 مل", price: 35 },
-      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 55 },
+          { label: "30 ml", arLabel: "الحجم 30 مل", price: 210 },
+      { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
+      { label: "100 ml", arLabel: "الحجم 100 مل", price: 385 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
     ]
   },
   {
@@ -112,11 +65,10 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/orto-parisi-megamare.jpeg",
     variants: [
-      { label: "30 ml", arLabel: "الحجم 30 مل", price: 210 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 290 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 470 },
-      { label: "Tester 5 ml", arLabel: "تستر 5 مل", price: 45 },
-      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 65 },
+          { label: "30 ml", arLabel: "الحجم 30 مل", price: 240 },
+      { label: "50 ml", arLabel: "الحجم 50 مل", price: 340 },
+      { label: "100 ml", arLabel: "الحجم 100 مل", price: 425 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
     ]
   },
   {
@@ -129,11 +81,10 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/stronger-with-you-intensely.jpeg",
     variants: [
-      { label: "30 ml", arLabel: "الحجم 30 مل", price: 160 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 210 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 330 },
-      { label: "Tester 5 ml", arLabel: "تستر 5 مل", price: 35 },
-      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 55 },
+          { label: "30 ml", arLabel: "الحجم 30 مل", price: 210 },
+      { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
+      { label: "100 ml", arLabel: "الحجم 100 مل", price: 385 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
     ]
   },
   {
@@ -146,11 +97,10 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/dior-homme-intense.jpeg",
     variants: [
-      { label: "30 ml", arLabel: "الحجم 30 مل", price: 160 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 210 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 330 },
-      { label: "Tester 5 ml", arLabel: "تستر 5 مل", price: 35 },
-      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 55 },
+         { label: "30 ml", arLabel: "الحجم 30 مل", price: 210 },
+      { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
+      { label: "100 ml", arLabel: "الحجم 100 مل", price: 385 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
     ]
   },
   {
@@ -163,31 +113,39 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/bianco-latte.jpeg",
     variants: [
-      { label: "30 ml", arLabel: "الحجم 30 مل", price: 170 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 230 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 370 },
-      { label: "Tester 5 ml", arLabel: "تستر 5 مل", price: 35 },
-      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 55 },
+        { label: "30 ml", arLabel: "الحجم 30 مل", price: 210 },
+      { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
+      { label: "100 ml", arLabel: "الحجم 100 مل", price: 385 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
     ]
   },
-  {
-    id: 22,
-    name: "Stronger Power Of You",
-    category: "perfumes",
-    price: null,
-    num: "IX",
-    desc: "توليفة استوائية مشرقة تفيض بالدفء، تعتمد على الباشن فروت واللمسات الشمسية، وتستقر على قاعدة بلسمية عميقة من فانيليا مدغشقر لعمق كرميلي سكري وثبات مخملي.",
-    badge: "New",
-    img: "assets/products/stronger-power-of-you.jpeg",
-    variants: [
-      { label: "30 ml", arLabel: "الحجم 30 مل", price: 160 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 210 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 330 },
-      { label: "Tester 5 ml", arLabel: "تستر 5 مل", price: 35 },
-      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 55 },
-    ]
-  },
+
 ];
+
+// ── Opening Sale (20% off everything) ──────────────────────────
+const SALE_ACTIVE = true;
+const SALE_PERCENT = 20;
+
+function salePrice(price) {
+  if (!SALE_ACTIVE || !Number.isFinite(price)) return price;
+  return Math.round(price * (1 - SALE_PERCENT / 100));
+}
+
+// HTML version (old price struck through + new price) — for on-page display
+function priceHTML(unitPrice, quantity = 1) {
+  const original = unitPrice * quantity;
+  if (!SALE_ACTIVE) return formatMoney(original);
+  const discounted = salePrice(unitPrice) * quantity;
+  return `<span class="price-old">${formatMoney(original)}</span><span class="price-new">${formatMoney(discounted)}</span>`;
+}
+
+// Plain-text version (old price in parentheses) — for the WhatsApp message
+function priceText(unitPrice, quantity = 1, wasLabel = 'was') {
+  const original = unitPrice * quantity;
+  if (!SALE_ACTIVE) return formatMoney(original);
+  const discounted = salePrice(unitPrice) * quantity;
+  return `${formatMoney(discounted)} (${wasLabel} ${formatMoney(original)})`;
+}
 
 const FINDER_MODES = {
   evening: [9, 14],
@@ -196,10 +154,10 @@ const FINDER_MODES = {
   collector: [0, 7],
 };
 
-const CART_STORAGE_KEY = 'ora-cart-v1';
+const CART_STORAGE_KEY = 'taraf-cart-v1';
 let cart = loadCart();
 
-// â”€â”€ DOM refs â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ──── DOM refs ────────────────────────────────────────────────────────────────────────────────────
 const $ = id => document.getElementById(id);
 const productsGrid = $('products-grid');
 const cartSidebar  = $('cart-sidebar');
@@ -330,12 +288,26 @@ function formatMoney(n) {
 function formatProductPrice(item, quantity = 1) {
   const L = typeof LANG !== 'undefined' ? LANG : null;
   const variant = selectedVariant(item);
-  if (variant) return formatMoney(variant.price * quantity);
+  if (variant) return priceHTML(variant.price, quantity);
   if (hasVariants(item)) {
     const from = L ? L.str('from_price') : 'From';
-    return `${from} ${formatMoney(minVariantPrice(item) * quantity)}`;
+    return `${from} ${priceHTML(minVariantPrice(item), quantity)}`;
   }
-  return hasPrice(item) ? formatMoney(item.price * quantity) : (L ? L.str('price_on_request') : 'Price on request');
+  return hasPrice(item) ? priceHTML(item.price, quantity) : (L ? L.str('price_on_request') : 'Price on request');
+}
+
+// Plain-text price (no HTML) for the WhatsApp order message
+function formatProductPriceText(item, quantity = 1) {
+  const L = typeof LANG !== 'undefined' ? LANG : null;
+  const isAr = L && L.isAr;
+  const wasLabel = isAr ? 'بدل' : 'was';
+  const variant = selectedVariant(item);
+  if (variant) return priceText(variant.price, quantity, wasLabel);
+  if (hasVariants(item)) {
+    const from = L ? L.str('from_price') : 'From';
+    return `${from} ${priceText(minVariantPrice(item), quantity, wasLabel)}`;
+  }
+  return hasPrice(item) ? priceText(item.price, quantity, wasLabel) : (L ? L.str('price_on_request') : 'Price on request');
 }
 
 function formatVariantLabel(variant) {
@@ -349,16 +321,28 @@ function selectedVariantLabel(item) {
 }
 
 function variantFullLabel(variant) {
-  return `${formatVariantLabel(variant)} - ${formatMoney(variant.price)}`;
+  return `${formatVariantLabel(variant)} - ${priceHTML(variant.price)}`;
 }
 
 function formatVariantList(item) {
+  const L = typeof LANG !== 'undefined' ? LANG : null;
+  const wasLabel = (L && L.isAr) ? 'بدل' : 'was';
   return hasVariants(item)
-    ? item.variants.map(variant => `${formatVariantLabel(variant)}: ${formatMoney(variant.price)}`)
+    ? item.variants.map(variant => `${formatVariantLabel(variant)}: ${priceText(variant.price, 1, wasLabel)}`)
     : [];
 }
 
+// Line total used for cart subtotal / WhatsApp total — always the discounted price
 function pricedLineTotal(item) {
+  const variant = selectedVariant(item);
+  if (variant) return salePrice(variant.price) * item.quantity;
+  if (hasPrice(item)) return salePrice(item.price) * item.quantity;
+  if (hasVariants(item)) return salePrice(minVariantPrice(item)) * item.quantity;
+  return 0;
+}
+
+// Same as pricedLineTotal but at the ORIGINAL (pre-discount) price — used to show savings
+function originalLineTotal(item) {
   const variant = selectedVariant(item);
   if (variant) return variant.price * item.quantity;
   if (hasPrice(item)) return item.price * item.quantity;
@@ -381,15 +365,17 @@ function chooseVariantInQuickView(variantIndex) {
 
   const label = variantFullLabel(variant);
   const priceEl = quickviewContent.querySelector('[data-selected-price]');
-  if (priceEl) priceEl.textContent = label;
+  if (priceEl) priceEl.innerHTML = label;
   const addPriceEl = quickviewContent.querySelector('[data-qv-add-price]');
-  if (addPriceEl) addPriceEl.textContent = label;
+  if (addPriceEl) addPriceEl.innerHTML = label;
+  const addBtn = quickviewContent.querySelector('[data-qv-add]');
+  if (addBtn) addBtn.disabled = false;
 }
 
 function selectedQuickViewVariantIndex(product) {
   if (!hasVariants(product)) return null;
   const current = quickviewContent?.dataset.variantIndex;
-  return current !== undefined && current !== '' ? Number(current) : productDefaultVariantIndex(product);
+  return current !== undefined && current !== '' ? Number(current) : null;
 }
 
 function addProductToCart(product, variantIndex = null) {
@@ -400,7 +386,7 @@ function addProductToCart(product, variantIndex = null) {
   return cartItem;
 }
 
-// â”€â”€ Hero Motion Canvas â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ──── Hero Motion Canvas ────────────────────────────────────────────────────────────────
 (function initHeroMotionCanvas() {
   const canvas = $('hero-motion-canvas');
   const hero = $('hero');
@@ -500,7 +486,7 @@ function addProductToCart(product, variantIndex = null) {
 
 
 
-// â”€â”€ Canvas Particle Constellation â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ──── Canvas Particle Constellation ────────────────────────────────────────
 (function initCanvas() {
   const canvas = $('bg-canvas');
   if (!canvas) return;
@@ -592,7 +578,7 @@ function addProductToCart(product, variantIndex = null) {
   tick();
 })();
 
-// â”€â”€ Marquee â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ──── Marquee ──────────────────────────────────────────────────────────────────────────────────────
 function rebuildMarquee() {
   const track = $('marquee-track');
   if (!track) return;
@@ -616,7 +602,7 @@ function rebuildMarquee() {
 }
 rebuildMarquee();
 
-// â”€â”€ Signature Finder â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ──── Signature Finder ────────────────────────────────────────────────────────────────────
 function renderFinder(mode = activeFinder) {
   if (!finderShowcase) return;
   activeFinder = mode;
@@ -627,7 +613,7 @@ function renderFinder(mode = activeFinder) {
     ? L.finderMode(mode)
     : {
         label: mode,
-        title: 'A curated ORA pairing',
+        title: 'A curated TARAF pairing',
         text: 'A refined combination selected for the moment.',
         ritual: 'Wear it with quiet confidence.',
       };
@@ -672,13 +658,13 @@ function renderFinder(mode = activeFinder) {
     </div>`;
 }
 
-// â”€â”€ Navbar scroll â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ──── Navbar scroll ──────────────────────────────────────────────────────────────────────────
 window.addEventListener('scroll', () => {
   const nb = $('navbar');
   if (nb) nb.classList.toggle('scrolled', window.scrollY > 60);
 }, { passive: true });
 
-// â”€â”€ Scroll-reveal via IntersectionObserver â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ──── Scroll-reveal via IntersectionObserver ────────────────────────
 const revealObserver = new IntersectionObserver(entries => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
@@ -690,7 +676,7 @@ const revealObserver = new IntersectionObserver(entries => {
   });
 }, { threshold: 0.08 });
 
-// â”€â”€ Render Products â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ──── Render Products ──────────────────────────────────────────────────────────────────────
 function renderProducts(filter = activeFilter) {
   if (!productsGrid) return;
   activeFilter = filter;
@@ -741,7 +727,7 @@ function renderProducts(filter = activeFilter) {
       const empty = document.createElement('div');
       empty.className = 'products-empty';
       empty.innerHTML = `
-        <div class="cart-empty-glyph">â—‡</div>
+        <div class="cart-empty-glyph">◇</div>
         <h3>${L ? L.str('no_results') : 'No products found'}</h3>
         <p>${L ? L.str('try_another_search') : 'Try another search or filter.'}</p>`;
       productsGrid.appendChild(empty);
@@ -769,6 +755,7 @@ function renderProducts(filter = activeFilter) {
           <img src="${p.img}" alt="${pName}" class="product-image" loading="lazy">
           <span class="cat-pill">${pCat}</span>
           ${pBadge ? `<span class="badge-pill ${p.badge === 'Limited' ? 'badge-limited' : p.badge === 'New' ? 'badge-new' : 'badge-best'}">${pBadge}</span>` : ''}
+          ${SALE_ACTIVE ? `<span class="discount-badge">-${SALE_PERCENT}%</span>` : ''}
           <div class="num-tag">${p.num}</div>
           <div class="product-overlay">
             <button class="quick-view-btn" data-view-id="${p.id}">${viewLabel}</button>
@@ -792,7 +779,7 @@ function renderProducts(filter = activeFilter) {
   }, 260);
 }
 
-// â”€â”€ Cart: Add â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ──── Cart: Add ──────────────────────────────────────────────────────────────────────────────────
 function addToCart(id, variantIndex = null) {
   const product = PRODUCTS.find(p => p.id === id);
   if (!product) return;
@@ -806,20 +793,20 @@ function addToCart(id, variantIndex = null) {
   const L = typeof LANG !== 'undefined' ? LANG : null;
   const pName = L ? L.productName(product) : product.name;
   const variantLabel = selectedVariantLabel(cartItem);
-  const addedMsg = L ? L.str('added') : ' â€” Added';
+  const addedMsg = L ? L.str('added') : ' — Added';
   showToast(`${pName}${variantLabel ? ` (${variantLabel})` : ''}${addedMsg}`);
   cartBadge.classList.remove('pop');
   void cartBadge.offsetWidth;
   cartBadge.classList.add('pop');
 }
 
-// â”€â”€ Cart: Remove â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ──── Cart: Remove ────────────────────────────────────────────────────────────────────────────
 function removeFromCart(key) {
   cart = cart.filter(i => cartItemKey(i) !== String(key));
   updateCartUI();
 }
 
-// â”€â”€ Cart: Qty change â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ──── Cart: Qty change ────────────────────────────────────────────────────────────────────
 function changeQty(key, delta) {
   const item = cart.find(i => cartItemKey(i) === String(key));
   if (!item) return;
@@ -843,7 +830,7 @@ function addPairToCart(ids) {
   cartBadge.classList.add('pop');
 }
 
-// â”€â”€ Cart UI Update â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ──── Cart UI Update ────────────────────────────────────────────────────────────────────────
 function updateCartUI() {
   persistCart();
   const L = typeof LANG !== 'undefined' ? LANG : null;
@@ -865,7 +852,7 @@ function updateCartUI() {
   if (!cart.length) {
     cartItemsEl.innerHTML = `
       <div class="cart-empty">
-        <div class="cart-empty-glyph">◇</div>
+        <div class="cart-empty-glyph">â—‡</div>
         <p>${L ? L.str('cart_empty') : 'Your cart is empty'}</p>
       </div>`;
   } else {
@@ -910,9 +897,23 @@ function updateCartUI() {
   if (cartTotalEl) cartTotalEl.textContent = fromPrefix + formatMoney(finalTotal) + quoteSuffix;
   if (cartSubEl)   cartSubEl.textContent   = fromPrefix + formatMoney(totalPrice) + quoteSuffix;
   if (cartShippingEl) cartShippingEl.textContent = formatMoney(shippingFee);
+
+  // Savings row — shows how much the 20% opening sale saved on this cart
+  const cartSavingsRow = document.getElementById('cart-savings-row');
+  const cartSavingsEl = document.getElementById('cart-savings');
+  if (cartSavingsRow && cartSavingsEl) {
+    const originalTotal = cart.reduce((s, i) => s + originalLineTotal(i), 0);
+    const savings = originalTotal - totalPrice;
+    if (SALE_ACTIVE && savings > 0) {
+      cartSavingsEl.textContent = `- ${formatMoney(savings)}`;
+      cartSavingsRow.style.display = 'flex';
+    } else {
+      cartSavingsRow.style.display = 'none';
+    }
+  }
 }
 
-// â”€â”€ Toggle Cart â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ──── Toggle Cart ──────────────────────────────────────────────────────────────────────────────
 function toggleCart() {
   const open = cartSidebar.classList.toggle('open');
   cartOverlay.classList.toggle('active', open);
@@ -931,7 +932,7 @@ function openQuickView(id) {
   const badge = L ? L.productBadge(product) : product.badge;
   const price = formatProductPrice(product);
   const withVariants = hasVariants(product);
-  const defaultVIdx = productDefaultVariantIndex(product);
+  const defaultVIdx = null;
 
   // Build size selector for products with variants
   let sizeSelectorHTML = '';
@@ -943,8 +944,8 @@ function openQuickView(id) {
         <div class="qv-size-options">
           ${product.variants.map((v, i) => {
             const vLabel = formatVariantLabel(v);
-            const vPrice = formatMoney(v.price);
-            const isDefault = i === defaultVIdx;
+            const vPrice = priceHTML(v.price);
+            const isDefault = false;
             return `<button class="qv-size-btn${isDefault ? ' active' : ''}" type="button" data-variant-index="${i}" role="radio" aria-checked="${isDefault}">
               <span class="qv-size-name">${vLabel}</span>
               <span class="qv-size-price">${vPrice}</span>
@@ -954,13 +955,9 @@ function openQuickView(id) {
       </div>`;
   }
 
-  // Set initial price for display (use selected variant price if variants exist)
-  const initialPrice = withVariants && defaultVIdx !== null
-    ? formatMoney(product.variants[defaultVIdx].price)
-    : price;
-  const initialVariantLabel = withVariants && defaultVIdx !== null
-    ? variantFullLabel(product.variants[defaultVIdx])
-    : price;
+  const chooseSizeText = L ? L.str('choose_size_first') : 'Choose a size first';
+  const initialPrice = withVariants ? chooseSizeText : price;
+  const initialVariantLabel = withVariants ? chooseSizeText : price;
 
   quickviewContent.dataset.productId = String(product.id);
   if (withVariants && defaultVIdx !== null) {
@@ -985,7 +982,7 @@ function openQuickView(id) {
       <div class="quickview-notes">
         ${meta.notes.map(note => `<span>${note}</span>`).join('')}
       </div>
-      <button class="quickview-add" type="button" data-qv-add="${product.id}">
+      <button class="quickview-add" type="button" data-qv-add="${product.id}" ${withVariants ? 'disabled' : ''}>
         <span>${L ? L.str('add_to_cart') : 'Add to Cart'}</span>
         <strong data-qv-add-price>${initialVariantLabel}</strong>
       </button>
@@ -1011,9 +1008,14 @@ function sendOrderToWhatsApp() {
   const phoneNumber = "201280359576";
   const isAr = L && L.isAr;
   let msg = isAr ? "السلام عليكم، أريد طلب:\n\n" : "Hello, I would like to order:\n\n";
+  if (SALE_ACTIVE) {
+    msg += isAr
+      ? `خصم الافتتاح: ${SALE_PERCENT}% على كل المنتجات (مطبق على الأسعار تحت)\n\n`
+      : `Opening Sale: ${SALE_PERCENT}% OFF everything (already applied below)\n\n`;
+  }
   cart.forEach(i => {
     const name = L ? L.productName(i) : i.name;
-    const price = formatProductPrice(i, i.quantity);
+    const price = formatProductPriceText(i, i.quantity);
     msg += `• ${name} × ${i.quantity} — ${price}\n`;
     const variants = formatVariantList(i);
     if (variants.length) msg += `  ${isAr ? 'الأسعار:' : 'Prices:'} ${variants.join(' | ')}\n`;
@@ -1021,12 +1023,17 @@ function sendOrderToWhatsApp() {
   const hasQuotedItems = cart.some(isQuotedItem);
   const hasFromItems = cart.some(hasVariants);
   const total = cart.reduce((s, i) => s + pricedLineTotal(i), 0);
+  const originalTotal = cart.reduce((s, i) => s + originalLineTotal(i), 0);
+  const savings = originalTotal - total;
   const shippingFee = 15;
   const finalTotal = total + shippingFee;
   const shippingFmt = formatMoney(shippingFee);
   const totalFmt = `${hasFromItems ? `${L ? L.str('from_price') : 'From'} ` : ''}${formatMoney(finalTotal)}${hasQuotedItems ? ` + ${L ? L.str('quote_items') : 'quoted on WhatsApp'}` : ''}`;
   msg += `\n${isAr ? 'الشحن:' : 'Shipping:'} ${shippingFmt}`;
-  msg += `\n─────────────────\n${isAr ? 'المجموع:' : 'Total:'} ${totalFmt}`;
+  if (SALE_ACTIVE && savings > 0) {
+    msg += `\n${isAr ? 'إجمالي التوفير:' : 'Total savings:'} ${formatMoney(savings)}`;
+  }
+  msg += `\n──────────────\n${isAr ? 'المجموع:' : 'Total:'} ${totalFmt}`;
   window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
@@ -1073,7 +1080,7 @@ const generalReveal = new IntersectionObserver(entries => {
 
 document.querySelectorAll('.reveal').forEach(el => generalReveal.observe(el));
 
-// ——— Event Delegation —————————————————————————
+// ─── Event Delegation ─────────────────────────
 document.addEventListener('click', e => {
   if (e.target.closest('#menu-trigger')) {
     const btn = e.target.closest('#menu-trigger');
@@ -1130,6 +1137,11 @@ document.addEventListener('click', e => {
     const product = PRODUCTS.find(p => p.id === productId);
     if (product && hasVariants(product)) {
       const vIdx = selectedQuickViewVariantIndex(product);
+      if (vIdx === null) {
+        const L = typeof LANG !== 'undefined' ? LANG : null;
+        showToast(L ? L.str('choose_size_first') : 'Choose a size first');
+        return;
+      }
       addToCart(productId, vIdx);
     } else {
       addToCart(productId);
@@ -1175,7 +1187,7 @@ if (backToTop) {
   backToTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
 }
 
-// â”€â”€ 3D Tilt â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ──── 3D Tilt ──────────────────────────────────────────────────────────────────────────────────────
 document.addEventListener('mousemove', e => {
   document.querySelectorAll('.product-card').forEach(card => {
     const rect = card.getBoundingClientRect();
@@ -1207,9 +1219,9 @@ document.addEventListener('keydown', e => {
   }
 });
 
-// â”€â”€ Theme Toggle â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ──── Theme Toggle ────────────────────────────────────────────────────────────────────────────
 (function initTheme() {
-  const saved = localStorage.getItem('ora-theme');
+  const saved = localStorage.getItem('taraf-theme');
   if (saved === 'light') document.documentElement.setAttribute('data-theme', 'light');
 })();
 
@@ -1219,15 +1231,15 @@ if (themeToggle) {
     const isLight = document.documentElement.getAttribute('data-theme') === 'light';
     if (isLight) {
       document.documentElement.removeAttribute('data-theme');
-      localStorage.setItem('ora-theme', 'dark');
+      localStorage.setItem('taraf-theme', 'dark');
     } else {
       document.documentElement.setAttribute('data-theme', 'light');
-      localStorage.setItem('ora-theme', 'light');
+      localStorage.setItem('taraf-theme', 'light');
     }
   });
 }
 
-// â”€â”€ Init â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+// ──── Init ────────────────────────────────────────────────────────────────────────────────────────────
 cartBadge.style.display = 'none';
 updateCartUI();
 renderFinder();

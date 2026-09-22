@@ -1,5 +1,5 @@
-/* =====================================================
-   ORA — Ultra Premium Dark Luxury v2
+﻿/* =====================================================
+   TARAF ─ Ultra Premium Dark Luxury v2
    ===================================================== */
 :root {
   --gold:        #E2A98B;
@@ -24,7 +24,7 @@
   --ease-io:     cubic-bezier(0.77,0,0.175,1);
 }
 
-/* ── LIGHT MODE ────────────────────────────────────── */
+/* â”€â”€ LIGHT MODE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 [data-theme="light"] {
   --void:        #F9FAFB;
   --charcoal:    #E9ECEF;
@@ -53,7 +53,7 @@ body {
   transition: background 0.5s var(--ease-out), color 0.5s var(--ease-out);
 }
 
-/* ── Language Toggle Button ───────────────────────── */
+/* â”€â”€ Language Toggle Button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .lang-toggle {
   position:relative;
   width:44px; height:44px;
@@ -80,7 +80,7 @@ body {
   color:var(--gold-light);
 }
 
-/* ── Theme Toggle Button ──────────────────────────── */
+/* â”€â”€ Theme Toggle Button â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .theme-toggle {
   position:relative;
   width:44px; height:44px;
@@ -110,7 +110,7 @@ body {
 [data-theme="light"] .theme-toggle .sun-icon { display:none; }
 [data-theme="light"] .theme-toggle .moon-icon { display:block; }
 
-/* ── Light mode particle/orb fixes ────────────────── */
+/* â”€â”€ Light mode particle/orb fixes â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 [data-theme="light"] .orb { opacity:0; }
 [data-theme="light"] .scanline { display:none; }
 [data-theme="light"] .diamonds-layer { opacity:0.3; }
@@ -134,7 +134,7 @@ body {
 [data-theme="light"] ::-webkit-scrollbar-track { background:var(--void); }
 [data-theme="light"] ::-webkit-scrollbar-thumb { background:var(--border-gold); }
 
-/* ── Custom Cursor ─────────────────────────────── */
+/* â”€â”€ Custom Cursor â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 #cursor-dot {
   position:fixed; top:0; left:0; z-index:9999;
   width:6px; height:6px; border-radius:50%;
@@ -157,12 +157,12 @@ body:has(a:hover) #cursor-ring {
   border-color:var(--gold);
 }
 
-/* ── Scrollbar ──────────────────────────────────── */
+/* â”€â”€ Scrollbar â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 ::-webkit-scrollbar { width:3px; }
 ::-webkit-scrollbar-track { background:var(--void); }
 ::-webkit-scrollbar-thumb { background:var(--border-gold); border-radius:2px; }
 
-/* ── CANVAS (global background) ─────────────────── */
+/* â”€â”€ CANVAS (global background) â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 #bg-canvas {
   position:fixed;
   inset:0;
@@ -170,7 +170,7 @@ body:has(a:hover) #cursor-ring {
   pointer-events:none;
 }
 
-/* ── ANIMATED ORBS ──────────────────────────────── */
+/* â”€â”€ ANIMATED ORBS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .orb-layer {
   position:fixed;
   inset:0;
@@ -252,7 +252,7 @@ body:has(a:hover) #cursor-ring {
   100% { opacity:0; transform:translate(0,0) scale(1); }
 }
 
-/* ── FLOATING DIAMONDS ──────────────────────────── */
+/* â”€â”€ FLOATING DIAMONDS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .diamonds-layer {
   position:fixed;
   inset:0;
@@ -291,7 +291,7 @@ body:has(a:hover) #cursor-ring {
   100% { transform:rotate(405deg) translateY(0px); }
 }
 
-/* ── Scanline overlay ───────────────────────────── */
+/* â”€â”€ Scanline overlay â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .scanline {
   position:fixed;
   inset:0;
@@ -346,10 +346,10 @@ body:has(a:hover) #cursor-ring {
 }
 
 .logo-img {
-  width:42px;
+  width:92px;
   height:42px;
-  border-radius:50%;
-  object-fit:cover;
+  border-radius:0;
+  object-fit:contain;
   transition:transform 0.4s var(--ease-out), box-shadow 0.4s;
 }
 
@@ -379,10 +379,10 @@ body:has(a:hover) #cursor-ring {
 
 /* Footer logo */
 .footer-logo-img {
-  width:32px;
+  width:78px;
   height:32px;
-  border-radius:50%;
-  object-fit:cover;
+  border-radius:0;
+  object-fit:contain;
   vertical-align:middle;
   margin-right:0.5rem;
 }
@@ -493,7 +493,7 @@ body:has(a:hover) #cursor-ring {
   100% { transform:scale(1); }
 }
 
-/* ── HERO ────────────────────────────────────────── */
+/* â”€â”€ HERO â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 #hero {
   position:relative;
   min-height:88vh;
@@ -699,7 +699,7 @@ spline-viewer {
 
 @keyframes fadeUp { to { opacity:1; transform:translateY(0); } }
 
-/* ── MARQUEE STRIP ───────────────────────────────── */
+/* â”€â”€ MARQUEE STRIP â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .marquee-strip {
   overflow:hidden;
   border-top:1px solid var(--border);
@@ -744,7 +744,7 @@ spline-viewer {
   to   { transform:translateX(-50%); }
 }
 
-/* ── PRODUCTS ────────────────────────────────────── */
+/* â”€â”€ PRODUCTS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 #products { padding:5rem 6% 7rem; }
 
 .section-header {
@@ -804,7 +804,7 @@ spline-viewer {
 @media(min-width:640px) { .products-grid { grid-template-columns:repeat(2,1fr); } }
 @media(min-width:1024px) { .products-grid { grid-template-columns:repeat(3,1fr); } }
 
-/* ── PRODUCT CARD ────────────────────────────────── */
+/* â”€â”€ PRODUCT CARD â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .product-card {
   background:var(--surface);
   display:flex;
@@ -1031,7 +1031,7 @@ spline-viewer {
 .add-to-cart-btn:hover::before { transform:scaleX(1); }
 .add-to-cart-btn span { position:relative; z-index:1; }
 
-/* ── CART OVERLAY & SIDEBAR ──────────────────────── */
+/* â”€â”€ CART OVERLAY & SIDEBAR â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .cart-overlay {
   position:fixed;
   inset:0;
@@ -1305,7 +1305,7 @@ spline-viewer {
 .checkout-btn:hover { background:var(--wa-dark); }
 .checkout-btn:active { transform:scale(0.99); }
 
-/* ── TOAST ───────────────────────────────────────── */
+/* â”€â”€ TOAST â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .toast {
   position:fixed;
   bottom:2.5rem;
@@ -1337,7 +1337,7 @@ spline-viewer {
   flex-shrink:0;
 }
 
-/* ── INNER PAGES ─────────────────────────────────── */
+/* â”€â”€ INNER PAGES â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .page-header {
   padding: 10rem 6% 4rem;
   text-align: center;
@@ -1506,7 +1506,7 @@ spline-viewer {
   margin-top: 1rem;
 }
 
-/* ── FOOTER ──────────────────────────────────────── */
+/* â”€â”€ FOOTER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .site-footer {
   border-top:1px solid var(--border);
   padding:2rem 6%;
@@ -1519,7 +1519,7 @@ spline-viewer {
   color:var(--text-3);
 }
 
-/* ── RESPONSIVE ──────────────────────────────────── */
+/* â”€â”€ RESPONSIVE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 @media(max-width:900px) {
   .nav-links {
     position:fixed;
@@ -1554,10 +1554,10 @@ spline-viewer {
   .products-grid { gap: 1rem; background: transparent; }
   .product-card { border: 1px solid var(--border); margin-bottom: 1rem; }
 }/* =====================================================
-   ORA — Extra Styles v3 (appended to style.css)
+   TARAF ─ Extra Styles v3 (appended to style.css)
    ===================================================== */
 
-/* ── Badge Pills ──────────────────────────────────────── */
+/* â”€â”€ Badge Pills â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .badge-pill {
   position: absolute;
   top: 1.1rem; right: 1.1rem;
@@ -1573,7 +1573,57 @@ spline-viewer {
 .badge-new  { background: rgba(100,160,255,0.15); color: #8bbfff; border: 1px solid rgba(100,160,255,0.3); }
 .badge-limited { background: rgba(220,80,80,0.15); color: #f08080; border: 1px solid rgba(220,80,80,0.3); }
 
-/* ── Product description ──────────────────────────────── */
+/* ── Opening Sale / Discount ─────────────────────────────── */
+.sale-banner {
+  position: relative;
+  z-index: 20;
+  text-align: center;
+  padding: 0.7rem 1rem;
+  background: linear-gradient(90deg, var(--gold), var(--gold-light), var(--gold));
+  background-size: 200% auto;
+  animation: saleShine 6s linear infinite;
+  color: #080808;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+@keyframes saleShine {
+  0% { background-position: 0% center; }
+  100% { background-position: 200% center; }
+}
+
+.discount-badge {
+  position: absolute;
+  bottom: 1rem; left: 1rem;
+  font-family: 'Outfit', sans-serif;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  color: #080808;
+  background: linear-gradient(135deg, var(--gold-light), var(--gold));
+  padding: 0.35rem 0.7rem;
+  border-radius: 2px;
+  z-index: 6;
+  box-shadow: 0 2px 10px var(--gold-glow);
+}
+
+.price-old {
+  text-decoration: line-through;
+  color: var(--text-3);
+  font-size: 0.85em;
+  opacity: 0.75;
+  margin-inline-end: 0.45rem;
+}
+
+.price-new {
+  color: var(--gold);
+  font-weight: 600;
+}
+
+.cart-savings-row .summary-val { color: #7ed99a; }
+
+/* â”€â”€ Product description â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .product-desc {
   font-size: 0.75rem;
   color: var(--text-3);
@@ -1582,7 +1632,7 @@ spline-viewer {
   flex-grow: 1;
 }
 
-/* ── Cart item thumbnail ──────────────────────────────── */
+/* â”€â”€ Cart item thumbnail â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .cart-item {
   display: flex;
   gap: 1rem;
@@ -1613,7 +1663,7 @@ spline-viewer {
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
 
-/* ── Qty controls ─────────────────────────────────────── */
+/* â”€â”€ Qty controls â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .cart-item-controls {
   display: flex;
   align-items: center;
@@ -1639,7 +1689,7 @@ spline-viewer {
   text-align: center;
 }
 
-/* ── VALUES SECTION ───────────────────────────────────── */
+/* â”€â”€ VALUES SECTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .values-section {
   padding: 6rem 6%;
   position: relative;
@@ -1729,7 +1779,7 @@ spline-viewer {
   letter-spacing: 0.5px;
 }
 
-/* ── FEATURED BANNER ──────────────────────────────────── */
+/* â”€â”€ FEATURED BANNER â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .featured-banner {
   margin: 0 6% 5rem;
   background: var(--surface-2);
@@ -1769,7 +1819,7 @@ spline-viewer {
   gap: 1rem;
 }
 .featured-eyebrow::before {
-  content: '◆';
+  content: 'â—†';
   font-size: 0.5rem;
 }
 .featured-text h2 {
@@ -1826,7 +1876,7 @@ spline-viewer {
   filter: brightness(0.9) saturate(1);
 }
 
-/* ── GENERAL REVEAL ───────────────────────────────────── */
+/* â”€â”€ GENERAL REVEAL â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .reveal {
   opacity: 0;
   transform: translateY(30px);
@@ -1841,7 +1891,7 @@ spline-viewer {
 .reveal-delay-3 { transition-delay: 0.3s; }
 .reveal-delay-4 { transition-delay: 0.4s; }
 
-/* ── FOOTER UPGRADE ───────────────────────────────────── */
+/* â”€â”€ FOOTER UPGRADE â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .site-footer {
   border-top: 1px solid var(--border);
   padding: 3rem 6%;
@@ -1886,14 +1936,14 @@ spline-viewer {
   .footer-brand { text-align: center; }
 }
 
-/* ── Page header line decoration ─────────────────────── */
+/* â”€â”€ Page header line decoration â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .page-header-line {
   width: 40px; height: 1px;
   background: var(--gold);
   margin: 1.5rem auto;
 }
 
-/* ── Contact form improvements ────────────────────────── */
+/* â”€â”€ Contact form improvements â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .form-group textarea { resize: vertical; min-height: 120px; }
 .form-row {
   display: grid;
@@ -1902,7 +1952,7 @@ spline-viewer {
 }
 @media(max-width: 600px) { .form-row { grid-template-columns: 1fr; } }
 
-/* ── About page stats ─────────────────────────────────── */
+/* â”€â”€ About page stats â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .stats-row {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1934,7 +1984,7 @@ spline-viewer {
   display: block;
 }
 
-/* ── Timeline for about page ──────────────────────────── */
+/* â”€â”€ Timeline for about page â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€ */
 .timeline {
   max-width: 600px;
   margin: 4rem auto;
@@ -1953,7 +2003,7 @@ spline-viewer {
   padding: 0 0 2.5rem 2rem;
 }
 .timeline-item::before {
-  content: '◆';
+  content: 'â—†';
   position: absolute;
   left: -0.35rem;
   top: 0.15rem;
