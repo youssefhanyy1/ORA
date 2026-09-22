@@ -129,7 +129,7 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/Taraf-Discovery-Samples.jpeg",
     variants: [
-        { label: "30 ml", arLabel: "الحجم 30 مل", price: 281 }, 
+        { label: "50 ml", arLabel: "الحجم 50 مل", price: 281 }, 
     ]
   },
 ];
