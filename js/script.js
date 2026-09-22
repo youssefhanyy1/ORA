@@ -65,9 +65,9 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/orto-parisi-megamare.jpeg",
     variants: [
-          { label: "30 ml", arLabel: "الحجم 30 مل", price: 240 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 340 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 510 },
+          { label: "30 ml", arLabel: "الحجم 30 مل", price: 250 },
+      { label: "50 ml", arLabel: "الحجم 50 مل", price: 338 },
+      { label: "100 ml", arLabel: "الحجم 100 مل", price: 512 },
       { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
     ]
   },
