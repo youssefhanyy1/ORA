@@ -1975,7 +1975,7 @@ spline-viewer {
   color: var(--text-1);
   margin-bottom: 0.4rem;
 }
-.timeline-item p {
+.timeline-item p {  
   font-size: 0.82rem;
   color: var(--text-3);
   line-height: 1.7;
