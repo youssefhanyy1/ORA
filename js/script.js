@@ -16,9 +16,9 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/louis-vuitton-symphony.jpeg",
     variants: [
-      { label: "30 ml", arLabel: "الحجم 30 مل", price: 210 },
+      { label: "30 ml", arLabel: "الحجم 30 مل", price: 212 },
       { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 385 },
+      { label: "100 ml", arLabel: "الحجم 100 مل", price: 475 },
       { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
     ]
   },
@@ -33,9 +33,9 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/erba-pura.jpeg",
     variants: [
-      { label: "30 ml", arLabel: "الحجم 30 مل", price: 210 },
+      { label: "30 ml", arLabel: "الحجم 30 مل", price: 212 },
       { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 385 },
+      { label: "100 ml", arLabel: "الحجم 100 مل", price: 475 },
       { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
     ]
   },
@@ -49,9 +49,9 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/dior-sauvage.jpeg",
     variants: [
-          { label: "30 ml", arLabel: "الحجم 30 مل", price: 210 },
+          { label: "30 ml", arLabel: "الحجم 30 مل", price: 212 },
       { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 385 },
+      { label: "100 ml", arLabel: "الحجم 100 مل", price: 475 },
       { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
     ]
   },
@@ -67,7 +67,7 @@ const PRODUCTS = [
     variants: [
           { label: "30 ml", arLabel: "الحجم 30 مل", price: 240 },
       { label: "50 ml", arLabel: "الحجم 50 مل", price: 340 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 425 },
+      { label: "100 ml", arLabel: "الحجم 100 مل", price: 510 },
       { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
     ]
   },
@@ -81,9 +81,9 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/stronger-with-you-intensely.jpeg",
     variants: [
-          { label: "30 ml", arLabel: "الحجم 30 مل", price: 210 },
+          { label: "30 ml", arLabel: "الحجم 30 مل", price: 212 },
       { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 385 },
+      { label: "100 ml", arLabel: "الحجم 100 مل", price: 475 },
       { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
     ]
   },
@@ -97,9 +97,9 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/dior-homme-intense.jpeg",
     variants: [
-         { label: "30 ml", arLabel: "الحجم 30 مل", price: 210 },
+         { label: "30 ml", arLabel: "الحجم 30 مل", price: 212 },
       { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 385 },
+      { label: "100 ml", arLabel: "الحجم 100 مل", price: 475 },
       { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
     ]
   },
@@ -113,13 +113,25 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/bianco-latte.jpeg",
     variants: [
-        { label: "30 ml", arLabel: "الحجم 30 مل", price: 210 },
+        { label: "30 ml", arLabel: "الحجم 30 مل", price: 212 },
       { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 385 },
+      { label: "100 ml", arLabel: "الحجم 100 مل", price: 475 },
       { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
     ]
   },
-
+  {
+    id: 22,
+    name: "Taraf Discovery Samples",
+    category: "perfumes",
+    price: null,
+    num: "VIIII",
+    desc: "​بوكس الاستكشاف صممناه مخصوص عشان تعيش التجربة كاملة، بيضم ٥ عطور مختلفة من اختيارك، كل زجاجة بحجم ١٠ مل.. عشان تجرب براحتك وتكتشف العطر اللي بيعبر عنك.٥ حكايات عطرية تناسب كل أوقاتك ومزاجك. حجم عملي جداً مثالي في جيبك، شنطتك، أو في السفر. الفرصة المثالية تكتشف عطرك المفضل قبل ما تشتري الحجم الكبير",
+    badge: "New",
+    img: "assets/products/Taraf-Discovery-Samples.jpeg",
+    variants: [
+        { label: "30 ml", arLabel: "الحجم 30 مل", price: 281 }, 
+    ]
+  },
 ];
 
 // ── Opening Sale (20% off everything) ──────────────────────────
