@@ -159,6 +159,12 @@ function priceText(unitPrice, quantity = 1, wasLabel = 'was') {
   return `${formatMoney(discounted)} (${wasLabel} ${formatMoney(original)})`;
 }
 
+// Shipping is priced by governorate and confirmed on WhatsApp — no fixed fee shown here
+function shippingLabel() {
+  const L = typeof LANG !== 'undefined' ? LANG : null;
+  return (L && L.isAr) ? 'حسب المحافظة' : 'Based on governorate';
+}
+
 const FINDER_MODES = {
   evening: [9, 14],
   daily: [11, 15],
@@ -902,13 +908,15 @@ function updateCartUI() {
     });
   }
 
-  const shippingFee = cart.length > 0 ? 15 : 0;
-  const finalTotal = totalPrice + shippingFee;
+  // Shipping is no longer a fixed fee — it depends on the customer's governorate
+  // and is confirmed on WhatsApp, so the total on-page shows the products total
+  // plus a note, not a computed grand total.
   const fromPrefix = hasFromItems ? `${L ? L.str('from_price') : 'From'} ` : '';
   const quoteSuffix = hasQuotedItems ? ` + ${L ? L.str('quote_items') : 'quoted on WhatsApp'}` : '';
-  if (cartTotalEl) cartTotalEl.textContent = fromPrefix + formatMoney(finalTotal) + quoteSuffix;
+  const shipLabel = shippingLabel();
+  if (cartTotalEl) cartTotalEl.textContent = `${fromPrefix}${formatMoney(totalPrice)}${quoteSuffix} + ${shipLabel}`;
   if (cartSubEl)   cartSubEl.textContent   = fromPrefix + formatMoney(totalPrice) + quoteSuffix;
-  if (cartShippingEl) cartShippingEl.textContent = formatMoney(shippingFee);
+  if (cartShippingEl) cartShippingEl.textContent = shipLabel;
 
   // Savings row — shows how much the 20% opening sale saved on this cart
   const cartSavingsRow = document.getElementById('cart-savings-row');
@@ -1037,11 +1045,10 @@ function sendOrderToWhatsApp() {
   const total = cart.reduce((s, i) => s + pricedLineTotal(i), 0);
   const originalTotal = cart.reduce((s, i) => s + originalLineTotal(i), 0);
   const savings = originalTotal - total;
-  const shippingFee = 15;
-  const finalTotal = total + shippingFee;
-  const shippingFmt = formatMoney(shippingFee);
-  const totalFmt = `${hasFromItems ? `${L ? L.str('from_price') : 'From'} ` : ''}${formatMoney(finalTotal)}${hasQuotedItems ? ` + ${L ? L.str('quote_items') : 'quoted on WhatsApp'}` : ''}`;
-  msg += `\n${isAr ? 'الشحن:' : 'Shipping:'} ${shippingFmt}`;
+  // Shipping depends on the customer's governorate — confirmed on WhatsApp, not a fixed fee
+  const shipLabel = isAr ? 'حسب المحافظة' : 'حسب المحافظة';
+  const totalFmt = `${hasFromItems ? `${L ? L.str('from_price') : 'From'} ` : ''}${formatMoney(total)}${hasQuotedItems ? ` + ${L ? L.str('quote_items') : 'quoted on WhatsApp'}` : ''} + ${shipLabel}`;
+  msg += `\n${isAr ? 'الشحن:' : 'Shipping:'} ${shipLabel}`;
   if (SALE_ACTIVE && savings > 0) {
     msg += `\n${isAr ? 'إجمالي التوفير:' : 'Total savings:'} ${formatMoney(savings)}`;
   }
