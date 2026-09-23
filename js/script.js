@@ -2,6 +2,8 @@
    TARAF — Premium JS v3
    ===================================================== */
 
+const LANG = typeof window.LANG !== 'undefined' ? window.LANG : null;
+
 // ──── Data ────────────────────────────────────────────────────────────────────────────────────────────
 const PRODUCTS = [
   
@@ -1137,7 +1139,7 @@ function closeQuickView() {
 function sendOrderToWhatsApp() {
   const L = typeof LANG !== 'undefined' ? LANG : null;
   if (!cart.length) { showToast(L ? L.str('cart_is_empty') : 'Cart is empty'); return; }
-  const phoneNumber = "201280359576";
+const PHONE_NUMBER = "201280359576";
   const isAr = L && L.isAr;
   let msg = isAr ? "السلام عليكم، أريد طلب:\n\n" : "Hello, I would like to order:\n\n";
   if (SALE_ACTIVE) {
