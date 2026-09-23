@@ -120,6 +120,118 @@ const PRODUCTS = [
     ]
   },
   {
+    id: 23,
+    name: "Althaïr Parfums de Marly",
+    category: "perfumes",
+    price: null,
+    num: "X",
+    desc: "افتتاحية دافئة من الهيل والقرفة والبرغموت مع زهر البرتقال، وقلب من فانيليا بوربون الفاخرة والإيليمي بلمسة كريمية داكنة غير مفرطة الحلاوة — تستقر على قاعدة خشبية من الغاياك والبرالين والمسك لثبات رزين وغموض فاخر",
+    badge: "New",
+    img: "assets/products/Althaïr-Parfums-de-Marly.jpeg",
+    variants: [
+      { label: "30 ml", arLabel: "الحجم 30 مل", price: 250 },
+      { label: "50 ml", arLabel: "الحجم 50 مل", price: 338 },
+      { label: "100 ml", arLabel: "الحجم 100 مل", price: 512 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
+    ]
+  },
+  {
+    id: 24,
+    name: "Vanilla Powder Matiere Premiere",
+    category: "perfumes",
+    price: null,
+    num: "XI",
+    desc: "افتتاحية بودرية مضيئة من جوز الهند الجاف النظيف، وقلب من فانيليا مدغشقر الفاخرة الجافة غير السكرية — تستقر على بالو سانتو ومسك أبيض بلمسة بخورية خفيفة وثبات استثنائي وأثر جذاب مناسب للجنسين",
+    badge: "New",
+    img: "assets/products/vanilla-powder-matiere-premiere.jpeg",
+    variants: [
+      { label: "30 ml", arLabel: "الحجم 30 مل", price: 250 },
+      { label: "50 ml", arLabel: "الحجم 50 مل", price: 338 },
+      { label: "100 ml", arLabel: "الحجم 100 مل", price: 512 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
+    ]
+  },
+    {
+    id: 25,
+    name: "Yara Candy Lattafa",
+    category: "perfumes",
+    price: null,
+    num: "XII",
+    desc: "افتتاحية فاكهية منعشة من التفاح الأخضر والكشمش الأسود، وقلب سكري مرح من حلوى الفراولة والنفحات الفوارة بطابع جورماند أنثوي — تستقر على قاعدة كريمية ناعمة من الفانيليا وخشب الصندل والمسك بأثر يشبه المارشميلو",
+    badge: "New",
+    img: "assets/products/Yara-Candy-Lattafa.jpeg",
+    variants: [
+      { label: "30 ml", arLabel: "الحجم 30 مل", price: 212 },
+      { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
+      { label: "100 ml", arLabel: "الحجم 100 مل", price: 475 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
+    ]
+  },
+    {
+    id: 26,
+    name: "Dove",
+    category: "perfumes",
+    price: null,
+    num: "XIII",
+    desc: "رائحة النظافة والصابون الكلاسيكية — افتتاحية ألدهيدية منعشة بلمسات زهرية مشرقة، وقلب بودري كريمي من زنابق الوادي والياسمين والورد، على قاعدة من المسك الأبيض القطني والصندل بثبات هادئ يلتصق بالجلد كأنه رائحتك الطبيعية",
+    badge: "New",
+    img: "assets/products/Dove.jpeg",
+    variants: [
+      { label: "30 ml", arLabel: "الحجم 30 مل", price: 212 },
+      { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
+      { label: "100 ml", arLabel: "الحجم 100 مل", price: 475 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
+    ]
+  },
+    {
+    id: 27,
+    name: "Pomegranate Musk",
+    category: "perfumes",
+    price: null,
+    num: "XIV",
+    desc: "مسك الرمان — رائحة النظافة الفاكهية. افتتاحية منعشة من حبوب الرمان العصارية مع لمسات من التوت الأحمر، وقلب من رحيق الرمان الحلو ونفحات الورد الفاتح، على قاعدة كريمية من المسك الأبيض بهالة قطنية بودرية تلتصق بالجلد لساعات طويلة",
+    badge: "New",
+    img: "assets/products/Pomegranate-Musk.jpeg",
+    variants: [
+      { label: "30 ml", arLabel: "الحجم 30 مل", price: 212 },
+      { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
+      { label: "100 ml", arLabel: "الحجم 100 مل", price: 475 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
+    ]
+  },
+    {
+    id: 28,
+    name: "Omani Oud",
+    category: "perfumes",
+    price: null,
+    num: "XV",
+    desc: "العود العماني — افتتاحية ملكية من اللبان العماني الفاخر مع الزعفران والتوابل الدافئة، وقلب من العود الطبيعي المعتق ولمسات مخملية من الورد والأخشاب الثمينة، على قاعدة راسخة من العود الدخاني والعنبر والمسك بأثر ممتد يعبر عن الهيبة والغموض",
+    badge: "New",
+    img: "assets/products/Omani-Oud.jpeg",
+    variants: [
+      { label: "30 ml", arLabel: "الحجم 30 مل", price: 212 },
+      { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
+      { label: "100 ml", arLabel: "الحجم 100 مل", price: 475 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
+    ]
+  },
+    {
+    id: 29,
+    name: "Oud Bouquet Lancôme",
+    category: "perfumes",
+    price: null,
+    num: "XVI",
+    desc: "عود بوكيه — افتتاحية دافئة مخملية من الزعفران النقي، وقلب شهي من الورد الفاخر والبرالين المكرمل بطابع جورماند جذاب، على قاعدة شرقية عميقة من العود الناعم المروّض وخشب الغاياك والفانيليا الكريمية بثبات استثنائي وأثر يملأ المكان",
+    badge: "New",
+    img: "assets/products/Oud-Bouquet.jpeg",
+    variants: [
+      { label: "30 ml", arLabel: "الحجم 30 مل", price: 212 },
+      { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
+      { label: "100 ml", arLabel: "الحجم 100 مل", price: 475 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
+    ]
+  },
+  {
     id: 22,
     name: "Taraf Discovery Samples",
     category: "perfumes",
