@@ -1958,7 +1958,7 @@ body.menu-open {
     letter-spacing: 6px;
   }
 
-  /* Hero â€” stack layout vertically */
+  /* Hero — stack layout vertically */
   .home-hero {
     min-height: auto;
     padding: 3rem 5% 4rem;
@@ -2005,7 +2005,7 @@ body.menu-open {
     margin-right: auto;
   }
 
-  /* Hero showcase â€” show as a neat row */
+  /* Hero showcase — show as a neat row */
   .hero-showcase {
     order: 2;
     min-height: 360px;
@@ -2437,7 +2437,7 @@ body.menu-open {
     padding: 3rem 5% 5rem;
   }
 
-  /* Toast â€” prevent overflow */
+  /* Toast — prevent overflow */
   .toast {
     width: calc(100vw - 3rem);
     white-space: normal;
@@ -2591,4 +2591,400 @@ body.menu-open {
 }
 .nav-socials a:hover {
     color: var(--gold);
+}
+
+/* Hero perfume stage refresh */
+.hero-showcase-perfume {
+  min-height: min(70vh, 660px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1.5rem, 3vw, 2.5rem);
+  isolation: isolate;
+}
+
+.hero-showcase-perfume::before {
+  content: '';
+  position: absolute;
+  inset: 7% 0 4% 8%;
+  border: 1px solid rgba(226,169,139,0.18);
+  background:
+    radial-gradient(circle at 68% 38%, rgba(226,169,139,0.2), transparent 24%),
+    radial-gradient(circle at 34% 72%, rgba(123,215,200,0.12), transparent 26%),
+    linear-gradient(145deg, rgba(18,25,41,0.42), rgba(7,10,17,0.72));
+  box-shadow: 0 34px 120px rgba(0,0,0,0.34), inset 0 0 60px rgba(226,169,139,0.05);
+  transform: skewY(-2deg);
+  z-index: -2;
+}
+
+.hero-showcase-perfume::after {
+  content: '';
+  position: absolute;
+  width: min(78%, 560px);
+  aspect-ratio: 1;
+  border: 1px solid rgba(226,169,139,0.16);
+  border-radius: 50%;
+  transform: rotateX(66deg) rotateZ(-18deg);
+  box-shadow: inset 0 0 55px rgba(226,169,139,0.07);
+  z-index: -1;
+  animation: heroRingTurn 24s linear infinite;
+}
+
+.hero-scent-glow {
+  position: absolute;
+  width: min(68%, 480px);
+  aspect-ratio: 1;
+  border-radius: 999px;
+  background: radial-gradient(circle, rgba(226,169,139,0.24), rgba(226,169,139,0.08) 35%, transparent 68%);
+  filter: blur(10px);
+  z-index: -1;
+  animation: heroNoteFloat 7.5s ease-in-out infinite;
+}
+
+.hero-main-perfume {
+  position: relative !important;
+  width: min(58%, 430px) !important;
+  height: min(62vh, 510px) !important;
+  right: auto !important;
+  bottom: auto !important;
+  top: auto !important;
+  transform: translateY(0) rotateY(-7deg) rotateZ(-1deg);
+  border-color: rgba(226,169,139,0.42);
+  box-shadow: 0 30px 90px rgba(0,0,0,0.46), 0 0 0 1px rgba(255,255,255,0.04) inset;
+  animation: heroTileFloat 8s ease-in-out infinite;
+}
+
+.hero-main-perfume img {
+  filter: brightness(0.9) saturate(1.05);
+}
+
+.hero-main-perfume span {
+  max-width: 82%;
+  font-size: clamp(1.45rem, 2.3vw, 2.2rem);
+}
+
+.hero-main-perfume strong {
+  color: var(--gold-light);
+}
+
+.hero-scent-panel,
+.hero-orbit-card {
+  position: absolute;
+  border: 1px solid rgba(226,169,139,0.28);
+  background: rgba(18,25,41,0.72);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  box-shadow: 0 22px 70px rgba(0,0,0,0.32);
+  z-index: 2;
+}
+
+.hero-scent-panel {
+  width: min(42%, 315px);
+  right: 3%;
+  bottom: 11%;
+  padding: 1.15rem;
+  animation: heroNoteFloat 7s ease-in-out infinite reverse;
+}
+
+.hero-panel-kicker,
+.hero-orbit-card span {
+  display: block;
+  color: var(--aqua);
+  font-size: 0.56rem;
+  letter-spacing: 2.8px;
+  text-transform: uppercase;
+  margin-bottom: 0.45rem;
+}
+
+.hero-scent-panel strong,
+.hero-orbit-card strong {
+  display: block;
+  color: var(--text-1);
+  font-family: 'Playfair Display', serif;
+  font-weight: 300;
+}
+
+.hero-scent-panel strong {
+  font-size: 1.25rem;
+  line-height: 1.28;
+  margin-bottom: 0.9rem;
+}
+
+.hero-panel-notes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.45rem;
+}
+
+.hero-panel-notes span {
+  border: 1px solid rgba(255,255,255,0.08);
+  background: rgba(255,255,255,0.035);
+  color: var(--text-2);
+  padding: 0.46rem 0.55rem;
+  font-size: 0.64rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.hero-orbit-card {
+  padding: 0.95rem 1rem;
+  width: min(34%, 230px);
+}
+
+.orbit-top { top: 16%; left: 5%; }
+.orbit-bottom { right: 10%; top: 9%; }
+.orbit-bottom span { color: var(--gold); }
+
+/* Arabic language polish */
+:root {
+  --text-muted: var(--text-2);
+  --border-color: var(--border);
+}
+
+html[dir="rtl"] body {
+  font-family: 'Cairo', 'Outfit', sans-serif;
+  letter-spacing: 0;
+}
+
+html[dir="rtl"] .logo,
+html[dir="rtl"] .nav-right,
+html[dir="rtl"] .hero-actions,
+html[dir="rtl"] .hero-proof-row,
+html[dir="rtl"] .collection-toolbar,
+html[dir="rtl"] .product-meta,
+html[dir="rtl"] .cart-header,
+html[dir="rtl"] .summary-row,
+html[dir="rtl"] .total-row,
+html[dir="rtl"] .quickview-add,
+html[dir="rtl"] .finder-actions,
+html[dir="rtl"] .process-steps,
+html[dir="rtl"] .social-links,
+html[dir="rtl"] .footer-links,
+html[dir="rtl"] .footer-socials {
+  direction: rtl;
+}
+
+html[dir="rtl"] .nav-links,
+html[dir="rtl"] .nav-socials,
+html[dir="rtl"] .floating-actions {
+  direction: ltr;
+}
+
+html[dir="rtl"] .nav-links a,
+html[dir="rtl"] .footer-links a,
+html[dir="rtl"] .filter-btn,
+html[dir="rtl"] .sort-select,
+html[dir="rtl"] .products-count,
+html[dir="rtl"] .hero-cta,
+html[dir="rtl"] .hero-secondary,
+html[dir="rtl"] .panel-cta,
+html[dir="rtl"] .checkout-btn,
+html[dir="rtl"] .form-submit-btn {
+  font-family: 'Cairo', sans-serif;
+  letter-spacing: 0;
+}
+
+html[dir="rtl"] .hero-content,
+html[dir="rtl"] .page-header,
+html[dir="rtl"] .text-block,
+html[dir="rtl"] .faq-aside,
+html[dir="rtl"] .policy-note,
+html[dir="rtl"] .cta-panel,
+html[dir="rtl"] .quickview-info,
+html[dir="rtl"] .product-info,
+html[dir="rtl"] .cart-item-info,
+html[dir="rtl"] .contact-form-wrap {
+  text-align: right;
+}
+
+html[dir="rtl"] .home-hero h1,
+html[dir="rtl"] .page-title,
+html[dir="rtl"] .section-title,
+html[dir="rtl"] .values-title h2,
+html[dir="rtl"] .text-block h2,
+html[dir="rtl"] .quickview-info h2 {
+  font-family: 'Cairo', 'Playfair Display', serif;
+  letter-spacing: 0;
+  line-height: 1.25;
+}
+
+html[dir="rtl"] .home-hero h1 em,
+html[dir="rtl"] .page-title em,
+html[dir="rtl"] .section-title em,
+html[dir="rtl"] .values-title h2 em,
+html[dir="rtl"] .text-block h2 em {
+  font-style: normal;
+}
+
+html[dir="rtl"] .hero-copy,
+html[dir="rtl"] .page-subtitle,
+html[dir="rtl"] .product-desc,
+html[dir="rtl"] .quickview-desc,
+html[dir="rtl"] .text-block p,
+html[dir="rtl"] details p {
+  line-height: 1.95;
+}
+
+html[dir="rtl"] .hero-main-perfume span,
+html[dir="rtl"] .hero-scent-panel strong,
+html[dir="rtl"] .hero-orbit-card strong {
+  font-family: 'Cairo', 'Playfair Display', serif;
+  line-height: 1.35;
+}
+
+html[dir="rtl"] .hero-panel-kicker,
+html[dir="rtl"] .hero-orbit-card span,
+html[dir="rtl"] .section-kicker,
+html[dir="rtl"] .hero-eyebrow {
+  letter-spacing: 1.2px;
+}
+
+html[dir="rtl"] .search-field svg {
+  left: auto;
+  right: 1rem;
+}
+
+html[dir="rtl"] .search-field input {
+  padding-left: 1rem;
+  padding-right: 2.8rem;
+  text-align: right;
+}
+
+html[dir="rtl"] .qv-size-options,
+html[dir="rtl"] .quickview-notes,
+html[dir="rtl"] .hero-panel-notes {
+  direction: rtl;
+}
+
+html[dir="rtl"] .cart-sidebar {
+  left: 0;
+  right: auto;
+  transform: translateX(-104%);
+}
+
+html[dir="rtl"] .cart-sidebar.open {
+  transform: translateX(0);
+}
+
+html[dir="rtl"] .cart-item-actions {
+  align-items: flex-start;
+}
+
+html[dir="rtl"] .quickview-close {
+  right: auto;
+  left: 1.1rem;
+}
+
+html[dir="rtl"] .two-col-grid,
+html[dir="rtl"] .quickview-content {
+  direction: rtl;
+}
+
+html[dir="rtl"] .two-col-grid > *,
+html[dir="rtl"] .quickview-content > * {
+  direction: rtl;
+}
+
+html[dir="rtl"] .timeline-item {
+  padding-left: 0;
+  padding-right: 2.2rem;
+}
+
+html[dir="rtl"] .timeline-item::before {
+  left: auto;
+  right: 0;
+}
+
+html[dir="rtl"] .hero-showcase-perfume::before {
+  inset: 7% 8% 4% 0;
+}
+
+html[dir="rtl"] .orbit-top {
+  left: auto;
+  right: 5%;
+}
+
+html[dir="rtl"] .orbit-bottom {
+  right: auto;
+  left: 10%;
+}
+
+html[dir="rtl"] .hero-scent-panel {
+  right: auto;
+  left: 3%;
+}
+
+html[dir="rtl"] .hero-main-perfume {
+  transform: translateY(0) rotateY(7deg) rotateZ(1deg);
+}
+
+@media (min-width: 1180px) {
+  .hero-showcase-perfume {
+    min-width: 0;
+  }
+
+  .hero-showcase-perfume::before {
+    min-height: 520px;
+  }
+}
+
+@media (max-width: 900px) {
+  html[dir="rtl"] .hero-content,
+  html[dir="rtl"] .page-header,
+  html[dir="rtl"] .values-title {
+    text-align: center;
+  }
+
+  html[dir="rtl"] .hero-actions,
+  html[dir="rtl"] .hero-proof-row,
+  html[dir="rtl"] .collection-toolbar {
+    justify-content: center;
+  }
+}
+
+@media (min-width: 1180px) {
+  .hero-layout {
+    grid-template-columns: minmax(0, 0.82fr) minmax(520px, 1.18fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .hero-showcase-perfume {
+    min-height: 520px;
+    max-width: 720px;
+  }
+
+  .hero-main-perfume {
+    width: min(62%, 390px) !important;
+    height: 410px !important;
+  }
+}
+
+@media (max-width: 620px) {
+  .hero-showcase-perfume {
+    min-height: 560px;
+    padding: 1rem 0.4rem;
+  }
+
+  .hero-showcase-perfume::before { inset: 4% 0 7%; }
+
+  .hero-main-perfume {
+    width: min(86%, 360px) !important;
+    height: 360px !important;
+    transform: none;
+  }
+
+  .hero-scent-panel {
+    width: min(92%, 340px);
+    right: 4%;
+    bottom: 3%;
+  }
+
+  .hero-orbit-card {
+    width: min(48%, 190px);
+    padding: 0.8rem;
+  }
+
+  .orbit-top { top: 2%; left: 1%; }
+  .orbit-bottom { top: 2%; right: 1%; }
 }

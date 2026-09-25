@@ -21,7 +21,7 @@ const PRODUCTS = [
       { label: "30 ml", arLabel: "الحجم 30 مل", price: 212 },
       { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
       { label: "100 ml", arLabel: "الحجم 100 مل", price: 475 },
-      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 }, 
     ]
   },
 
@@ -280,10 +280,9 @@ function shippingLabel() {
 }
 
 const FINDER_MODES = {
-  evening: [9, 14],
-  daily: [11, 15],
-  gift: [13, 12],
-  collector: [0, 7],
+  evening: [19, 14],
+  daily: [17, 21],
+  gift: [22, 16],
 };
 
 const CART_STORAGE_KEY = 'taraf-cart-v1';
@@ -310,6 +309,7 @@ const quickviewContent = $('quickview-content');
 
 let activeFilter = 'all';
 let activeFinder = 'evening';
+let productRenderRun = 0;
 
 function loadCart() {
   try {
@@ -738,6 +738,7 @@ rebuildMarquee();
 function renderFinder(mode = activeFinder) {
   if (!finderShowcase) return;
   activeFinder = mode;
+  window.activeFinder = activeFinder;
   const L = typeof LANG !== 'undefined' ? LANG : null;
   const ids = FINDER_MODES[mode] || FINDER_MODES.evening;
   const picks = ids.map(id => PRODUCTS.find(p => p.id === id)).filter(Boolean);
@@ -812,6 +813,8 @@ const revealObserver = new IntersectionObserver(entries => {
 function renderProducts(filter = activeFilter) {
   if (!productsGrid) return;
   activeFilter = filter;
+  window.activeFilter = activeFilter;
+  const renderRun = ++productRenderRun;
   document.querySelectorAll('.filter-btn').forEach(btn =>
     btn.classList.toggle('active', btn.dataset.filter === filter));
 
@@ -854,6 +857,7 @@ function renderProducts(filter = activeFilter) {
   productsGrid.style.transition = 'opacity 0.25s, transform 0.25s';
 
   setTimeout(() => {
+    if (renderRun !== productRenderRun) return;
     productsGrid.innerHTML = '';
     if (!list.length) {
       const empty = document.createElement('div');
@@ -984,7 +988,7 @@ function updateCartUI() {
   if (!cart.length) {
     cartItemsEl.innerHTML = `
       <div class="cart-empty">
-        <div class="cart-empty-glyph">â—‡</div>
+        <div class="cart-empty-glyph">◇</div>
         <p>${L ? L.str('cart_empty') : 'Your cart is empty'}</p>
       </div>`;
   } else {
@@ -1127,6 +1131,17 @@ function openQuickView(id) {
   document.body.style.overflow = 'hidden';
 }
 
+function refreshQuickViewLanguage() {
+  if (!quickviewModal?.classList.contains('open') || !quickviewContent) return;
+  const productId = Number(quickviewContent.dataset.productId);
+  if (!productId) return;
+  const variantIndex = quickviewContent.dataset.variantIndex;
+  openQuickView(productId);
+  if (variantIndex !== undefined && variantIndex !== '') {
+    chooseVariantInQuickView(Number(variantIndex));
+  }
+}
+
 function closeQuickView() {
   if (!quickviewModal || !quickviewOverlay) return;
   quickviewModal.classList.remove('open');
@@ -1139,7 +1154,7 @@ function closeQuickView() {
 function sendOrderToWhatsApp() {
   const L = typeof LANG !== 'undefined' ? LANG : null;
   if (!cart.length) { showToast(L ? L.str('cart_is_empty') : 'Cart is empty'); return; }
-const PHONE_NUMBER = "201280359576";
+const PHONE_NUMBER = "201005311879";
   const isAr = L && L.isAr;
   let msg = isAr ? "السلام عليكم، أريد طلب:\n\n" : "Hello, I would like to order:\n\n";
   if (SALE_ACTIVE) {
@@ -1160,14 +1175,14 @@ const PHONE_NUMBER = "201280359576";
   const originalTotal = cart.reduce((s, i) => s + originalLineTotal(i), 0);
   const savings = originalTotal - total;
   // Shipping depends on the customer's governorate — confirmed on WhatsApp, not a fixed fee
-  const shipLabel = isAr ? 'حسب المحافظة' : 'حسب المحافظة';
+  const shipLabel = isAr ? 'حسب المحافظة' : 'Based on governorate';
   const totalFmt = `${hasFromItems ? `${L ? L.str('from_price') : 'From'} ` : ''}${formatMoney(total)}${hasQuotedItems ? ` + ${L ? L.str('quote_items') : 'quoted on WhatsApp'}` : ''} + ${shipLabel}`;
   msg += `\n${isAr ? 'الشحن:' : 'Shipping:'} ${shipLabel}`;
   if (SALE_ACTIVE && savings > 0) {
     msg += `\n${isAr ? 'إجمالي التوفير:' : 'Total savings:'} ${formatMoney(savings)}`;
   }
   msg += `\n──────────────\n${isAr ? 'المجموع:' : 'Total:'} ${totalFmt}`;
-  window.open(`https://wa.me/${phoneNumber}?text=${encodeURIComponent(msg)}`, '_blank');
+  window.open(`https://wa.me/${PHONE_NUMBER}?text=${encodeURIComponent(msg)}`, '_blank');
 }
 
 // Toast
@@ -1190,16 +1205,6 @@ document.querySelectorAll('.hero-cta, .checkout-btn').forEach(btn => {
   });
   btn.addEventListener('mouseleave', () => { btn.style.transform = ''; });
 });
-
-// Hero Parallax
-const heroContent = document.querySelector('.hero-content');
-window.addEventListener('scroll', () => {
-  const y = window.scrollY;
-  if (heroContent && y < 800) {
-    heroContent.style.transform = `translateY(${y * 0.25}px)`;
-    heroContent.style.opacity = 1 - y / 550;
-  }
-}, { passive: true });
 
 // General Scroll Reveal
 const generalReveal = new IntersectionObserver(entries => {

@@ -16,6 +16,7 @@
     </script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/extra.css">
+    <link rel="stylesheet" href="css/brand.css">
 </head>
 <body class="home-page">
 
@@ -93,6 +94,7 @@
 
         <!-- HERO -->
         <section id="hero" class="home-hero">
+            <img class="hero-photograph" src="assets/products/louis-vuitton-symphony.jpeg" alt="" width="1024" height="1024" fetchpriority="high">
             <canvas id="hero-motion-canvas" aria-hidden="true"></canvas>
             <div class="hero-motion-shell" aria-hidden="true">
                 <div class="hero-grid-plane"></div>
@@ -111,8 +113,8 @@
             <div class="hero-layout">
                 <div class="hero-content">
                     <p class="hero-eyebrow">New Collection — 2026</p>
-                    <h1>Crafted for the<br><em>Discerning Few</em></h1>
-                    <p class="hero-copy">A cinematic curation of watches and fragrances, selected for people who notice quiet details.</p>
+                    <h1>TARAF<br><em>A presence of your own.</em></h1>
+                    <p class="hero-copy">Discover fragrances that feel like you. From bright citrus to warm woods, find your signature.</p>
                     <div class="hero-actions">
                         <button class="hero-cta" onclick="document.getElementById('products').scrollIntoView({behavior:'smooth'})">
                             <span>Explore Collection</span>
@@ -127,16 +129,12 @@
                     </div>
                 </div>
 
-                <div class="hero-showcase" aria-label="Featured TARAF pieces">
-
-                    <button class="hero-product-tile tile-secondary" type="button" data-view-id="14">
-                        <img src="assets/products/louis-vuitton-symphony.jpeg" alt="Louis Vuitton Symphony">
-                        <span>Louis Vuitton Symphony</span>
-                        <strong>Price on request</strong>
-                    </button>
-
-                </div>
             </div>
+            <button class="hero-feature-link" type="button" data-view-id="14">
+                <span class="hero-feature-kicker">The citrus edit</span>
+                <span class="hero-feature-name" dir="ltr">Louis Vuitton Symphony</span>
+                <span class="hero-feature-action">Discover the fragrance</span>
+            </button>
             <div class="scroll-hint" aria-hidden="true">
                 <span>Scroll</span>
                 <div class="scroll-line"></div>
@@ -179,9 +177,20 @@
             </div>
         </section>
 
-
-
-
+        <!-- SIGNATURE FINDER -->
+        <section id="atelier" class="atelier-section reveal">
+            <div class="atelier-copy">
+                <p class="section-kicker">Signature Finder</p>
+                <h2>Find your <em>TARAF</em> pairing</h2>
+                <p>Choose the mood and we will suggest a polished fragrance pairing from the current collection, ready to view or add with one tap.</p>
+                <div class="finder-controls" aria-label="Signature finder modes">
+                    <button class="finder-chip active" type="button" data-finder="evening">Evening</button>
+                    <button class="finder-chip" type="button" data-finder="daily">Daily</button>
+                    <button class="finder-chip" type="button" data-finder="gift">Gift</button>
+                </div>
+            </div>
+            <div class="finder-showcase" id="finder-showcase" aria-live="polite"></div>
+        </section>
 
         <!-- PRODUCTS -->
         <section id="products">
@@ -197,7 +206,7 @@
                 <label class="sr-only" for="product-search">Search products</label>
                 <div class="search-field">
                     <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-                    <input id="product-search" type="search" placeholder="Search watches, oud, rose...">
+                    <input id="product-search" type="search" placeholder="Search citrus, oud, musk...">
                 </div>
                 <label class="sr-only" for="product-sort">Sort products</label>
                 <select id="product-sort" class="sort-select" aria-label="Sort products">
@@ -311,7 +320,7 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+    <script src="js/lang.js"></script>
     <script src="js/script.js"></script>
 </body>
 </html>

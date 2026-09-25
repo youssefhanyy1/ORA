@@ -15,7 +15,7 @@ function initAmbientCanvas() {
     width = canvas.width = window.innerWidth;
     height = canvas.height = window.innerHeight;
     const count = Math.min(60, Math.floor(width * height / 16000));
-    particles = Array.from({ length: count }, () => new Particle(true));
+    particles = Array.from({ length: count }, () => new Particle( true)); 
   }
 
   class Particle {
@@ -184,19 +184,19 @@ function initContactForm() {
     const isAr = document.documentElement.lang === 'ar';
 
     if (!fname || !message) {
-      showToast(isAr ? 'ÙŠØ±Ø¬Ù‰ Ù…Ù„Ø¡ Ø§Ø³Ù…Ùƒ ÙˆØ±Ø³Ø§Ù„ØªÙƒ' : 'Please fill your name and message');
+      showToast(isAr ? 'يرجى كتابة الاسم والرسالة' : 'Please fill your name and message');
       return;
     }
 
-    let text = isAr ? '*ترف - Ø§Ø³ØªÙØ³Ø§Ø± Ø¬Ø¯ÙŠØ¯*\n\n' : '*TARAF - New Inquiry*\n\n';
-    text += isAr ? `Ø§Ù„Ø§Ø³Ù…: ${fname} ${lname}\n` : `Name: ${fname} ${lname}\n`;
-    if (email) text += isAr ? `Ø§Ù„Ø¨Ø±ÙŠØ¯ Ø§Ù„Ø¥Ù„ÙƒØªØ±ÙˆÙ†ÙŠ: ${email}\n` : `Email: ${email}\n`;
-    if (phone) text += isAr ? `Ø§Ù„Ù‡Ø§ØªÙ: ${phone}\n` : `Phone: ${phone}\n`;
-    if (interest) text += isAr ? `Ø§Ù„Ø§Ù‡ØªÙ…Ø§Ù…: ${interest}\n` : `Interest: ${interest}\n`;
-    text += isAr ? `\nØ§Ù„Ø±Ø³Ø§Ù„Ø©:\n${message}` : `\nMessage:\n${message}`;
+    let text = isAr ? '*ترف - استفسار جديد*\n\n' : '*TARAF - New Inquiry*\n\n';
+    text += isAr ? `الاسم: ${fname} ${lname}\n` : `Name: ${fname} ${lname}\n`;
+    if (email) text += isAr ? `البريد الإلكتروني: ${email}\n` : `Email: ${email}\n`;
+    if (phone) text += isAr ? `الهاتف: ${phone}\n` : `Phone: ${phone}\n`;
+    if (interest) text += isAr ? `الاهتمام: ${interest}\n` : `Interest: ${interest}\n`;
+    text += isAr ? `\nالرسالة:\n${message}` : `\nMessage:\n${message}`;
 
     window.open(`https://wa.me/201005311879?text=${encodeURIComponent(text)}`, '_blank');
-    showToast(isAr ? 'ÙŠØªÙ… ÙØªØ­ ÙˆØ§ØªØ³Ø§Ø¨...' : 'Opening WhatsApp...');
+    showToast(isAr ? 'يتم فتح واتساب...' : 'Opening WhatsApp...');
   });
 }
 
@@ -206,5 +206,4 @@ initNavigation();
 initReveal();
 initBackToTop();
 initContactForm();
-
 
