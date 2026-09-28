@@ -195,7 +195,7 @@ function initContactForm() {
     if (interest) text += isAr ? `الاهتمام: ${interest}\n` : `Interest: ${interest}\n`;
     text += isAr ? `\nالرسالة:\n${message}` : `\nMessage:\n${message}`;
 
-    window.open(`https://wa.me/201005311879?text=${encodeURIComponent(text)}`, '_blank');
+    window.open(`https://wa.me/201558674554?text=${encodeURIComponent(text)}`, '_blank');
     showToast(isAr ? 'يتم فتح واتساب...' : 'Opening WhatsApp...');
   });
 }
