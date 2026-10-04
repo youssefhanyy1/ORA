@@ -16,6 +16,8 @@ const PRODUCTS = [
     num: "I",
     desc: "Sparkling ginger, natural grapefruit, and bergamot over a soft musky-woody base",
     badge: "New",
+    gender: "men"
+    ,
     img: "assets/products/louis-vuitton-symphony.jpeg",
     variants: [
       { label: "35 ml", arLabel: "الحجم 35 مل", price: 244 },
@@ -33,6 +35,7 @@ const PRODUCTS = [
     num: "III",
     desc: "توليفة فاخرة من الفواكه الاستوائية المتوسطية مع برغموت وليمون، قاعدة من الفانيليا الفاخرة والعنبر والمسك الأبيض — ثبات أسطوري يلتصق بالجلد والملابس لأيام",
     badge: "New",
+    gender: "unisex",
     img: "assets/products/erba-pura.jpeg",
     variants: [
       { label: "35 ml", arLabel: "الحجم 35 مل", price: 244 },
@@ -49,6 +52,7 @@ const PRODUCTS = [
     num: "IV",
     desc: "توليفة ذكورية حادة ونظيفة من برغموت كالابريا وجرعة مكثفة من الأمبروكسان — قاعدة خشبية دافئة تترك أثراً قوياً لا يخطئه أحد",
     badge: "New",
+    gender: "men",
     img: "assets/products/dior-sauvage.jpeg",
     variants: [
       { label: "35 ml", arLabel: "الحجم 35 مل", price: 212 },
@@ -65,6 +69,7 @@ const PRODUCTS = [
     num: "V",
     desc: "لا يشبه العطور البحرية التقليدية، بل يرتكز على غموض وقوة أعماق المحيط. عاصفة بحرية مالحة وحادة مع قاعدة أسطورية من العنبر والأخشاب لثبات مرعب يدوم لأيام.",
     badge: "New",
+    gender: "men",
     img: "assets/products/orto-parisi-megamare.jpeg",
     variants: [
          { label: "35 ml", arLabel: "الحجم35 مل", price: 269 },
@@ -81,6 +86,7 @@ const PRODUCTS = [
     num: "VI",
     desc: "توليفة دافئة ومغرية تجمع بين جرأة الفلفل الوردي، حلاوة الكراميل المملح، وعمق الأخشاب. يستقر على قاعدة كريمية من الفانيليا والجلود لثبات ممتاز وهالة عطرية جذابة.",
     badge: "New",
+    gender: "men",
     img: "assets/products/stronger-with-you-intensely.jpeg",
     variants: [
       { label: "35 ml", arLabel: "الحجم 35 مل", price: 212 },
@@ -97,6 +103,7 @@ const PRODUCTS = [
     num: "VII",
     desc: "يرتكز على الفخامة الأرستقراطية والنقاء المخملي عبر توليفة أيقونية تعتمد على زهرة السوسن البودرية واللافندر، ويستقر على قاعدة دافئة من خشب الأرز ونجيل الهند.",
     badge: "New",
+    gender: "men",
     img: "assets/products/dior-homme-intense.jpeg",
     variants: [
          { label: "35 ml", arLabel: "الحجم35 مل", price: 269 },
@@ -113,6 +120,7 @@ const PRODUCTS = [
     num: "VIII",
     desc: "توليفة خطية شهية وفائقة النقاء تعتمد على الحليب الدافئ، الكراميل، والفانيليا، لتمنح شعوراً عارماً بالراحة والدفء مع قاعدة غنية من المسك الأبيض لكثافة تدوم.",
     badge: "New",
+    gender: "unisex",
     img: "assets/products/bianco-latte.jpeg",
     variants: [
       { label: "35 ml", arLabel: "الحجم 35 مل", price: 212 },
@@ -129,6 +137,7 @@ const PRODUCTS = [
     num: "X",
     desc: "افتتاحية دافئة من الهيل والقرفة والبرغموت مع زهر البرتقال، وقلب من فانيليا بوربون الفاخرة والإيليمي بلمسة كريمية داكنة غير مفرطة الحلاوة — تستقر على قاعدة خشبية من الغاياك والبرالين والمسك لثبات رزين وغموض فاخر",
     badge: "New",
+    gender: "men",
     img: "assets/products/Althaïr-Parfums-de-Marly.jpeg",
     variants: [
          { label: "35 ml", arLabel: "الحجم35 مل", price: 269 },
@@ -145,6 +154,7 @@ const PRODUCTS = [
     num: "XI",
     desc: "افتتاحية بودرية مضيئة من جوز الهند الجاف النظيف، وقلب من فانيليا مدغشقر الفاخرة الجافة غير السكرية — تستقر على بالو سانتو ومسك أبيض بلمسة بخورية خفيفة وثبات استثنائي وأثر جذاب مناسب للجنسين",
     badge: "New",
+    gender: "unisex",
     img: "assets/products/vanilla-powder-matiere-premiere.jpeg",
     variants: [
          { label: "35 ml", arLabel: "الحجم35 مل", price: 269 },
@@ -161,6 +171,7 @@ const PRODUCTS = [
     num: "XII",
     desc: "افتتاحية فاكهية منعشة من التفاح الأخضر والكشمش الأسود، وقلب سكري مرح من حلوى الفراولة والنفحات الفوارة بطابع جورماند أنثوي — تستقر على قاعدة كريمية ناعمة من الفانيليا وخشب الصندل والمسك بأثر يشبه المارشميلو",
     badge: "New",
+    gender: "women",
     img: "assets/products/Yara-Candy-Lattafa.jpeg",
     variants: [
       { label: "35 ml", arLabel: "الحجم 35 مل", price: 212 },
@@ -177,6 +188,7 @@ const PRODUCTS = [
     num: "XIII",
     desc: "رائحة النظافة والصابون الكلاسيكية — افتتاحية ألدهيدية منعشة بلمسات زهرية مشرقة، وقلب بودري كريمي من زنابق الوادي والياسمين والورد، على قاعدة من المسك الأبيض القطني والصندل بثبات هادئ يلتصق بالجلد كأنه رائحتك الطبيعية",
     badge: "New",
+    gender: "unisex",
     img: "assets/products/Dove.jpeg",
     variants: [
       { label: "35 ml", arLabel: "الحجم 35 مل", price: 212 },
@@ -193,6 +205,7 @@ const PRODUCTS = [
     num: "XIV",
     desc: "مسك الرمان — رائحة النظافة الفاكهية. افتتاحية منعشة من حبوب الرمان العصارية مع لمسات من التوت الأحمر، وقلب من رحيق الرمان الحلو ونفحات الورد الفاتح، على قاعدة كريمية من المسك الأبيض بهالة قطنية بودرية تلتصق بالجلد لساعات طويلة",
     badge: "New",
+    gender: "unisex",
     img: "assets/products/Pomegranate-Musk.jpeg",
     variants: [
       { label: "35 ml", arLabel: "الحجم 35 مل", price: 212 },
@@ -209,6 +222,7 @@ const PRODUCTS = [
     num: "XV",
     desc: "العود العماني — افتتاحية ملكية من اللبان العماني الفاخر مع الزعفران والتوابل الدافئة، وقلب من العود الطبيعي المعتق ولمسات مخملية من الورد والأخشاب الثمينة، على قاعدة راسخة من العود الدخاني والعنبر والمسك بأثر ممتد يعبر عن الهيبة والغموض",
     badge: "New",
+    gender: "unisex",
     img: "assets/products/Omani-Oud.jpeg",
     variants: [
       { label: "35 ml", arLabel: "الحجم 35 مل", price: 212 },
@@ -225,6 +239,7 @@ const PRODUCTS = [
     num: "XVI",
     desc: "عود بوكيه — افتتاحية دافئة مخملية من الزعفران النقي، وقلب شهي من الورد الفاخر والبرالين المكرمل بطابع جورماند جذاب، على قاعدة شرقية عميقة من العود الناعم المروّض وخشب الغاياك والفانيليا الكريمية بثبات استثنائي وأثر يملأ المكان",
     badge: "New",
+    gender: "men",
     img: "assets/products/Oud-Bouquet.jpeg",
     variants: [
       { label: "35 ml", arLabel: "الحجم 35 مل", price: 212 },
@@ -821,7 +836,12 @@ function renderProducts(filter = activeFilter) {
   const L = typeof LANG !== 'undefined' ? LANG : null;
   const query = (productSearch?.value || '').trim().toLowerCase();
   const sortMode = productSort?.value || 'featured';
-  let list = filter === 'all' ? [...PRODUCTS] : PRODUCTS.filter(p => p.category === filter);
+  let list = filter === 'all' ? [...PRODUCTS]
+    : (filter === 'men' || filter === 'women')
+      ? PRODUCTS.filter(p => p.gender === filter || p.gender === 'unisex')
+      : filter === 'unisex'
+        ? PRODUCTS.filter(p => p.gender === 'unisex')
+        : PRODUCTS.filter(p => p.category === filter);
 
   if (query) {
     list = list.filter(p => {
