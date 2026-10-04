@@ -2,7 +2,11 @@
    TARAF ─ Ultra Premium Dark Luxury v2
    ===================================================== */
 :root {
-  --gold:        #E2A98B;
+  --gold:        #3498db; /* Updated main green color */
+  --gold-light:  #2ecc71;
+  --gold-pale:   #f1c40f;
+  --gold-dim:    rgba(52, 152, 123, 0.12);
+  --gold-glow:   rgba(52, 152, 123, 0.25);
   --gold-light:  #F4CBB7;
   --gold-pale:   #FCEFE8;
   --gold-dim:    rgba(226, 169, 139, 0.12);
