@@ -1,4 +1,4 @@
-﻿/* =====================================================
+/* =====================================================
    TARAF — Premium JS v3
    ===================================================== */
 
@@ -858,6 +858,10 @@ function renderProducts(filter = activeFilter) {
   }
 
   list.sort((a, b) => {
+    if (filter === 'men' || filter === 'women') {
+      if (a.gender === filter && b.gender !== filter) return -1;
+      if (a.gender !== filter && b.gender === filter) return 1;
+    }
     if (sortMode === 'price-asc') return productPriceValue(a) - productPriceValue(b);
     if (sortMode === 'price-desc') {
       return productPriceValue(b, Number.NEGATIVE_INFINITY) - productPriceValue(a, Number.NEGATIVE_INFINITY);
