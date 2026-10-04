@@ -18,10 +18,10 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/louis-vuitton-symphony.jpeg",
     variants: [
-      { label: "30 ml", arLabel: "الحجم 30 مل", price: 244 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 319 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 519 },
-      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 }, 
+      { label: "35 ml", arLabel: "الحجم 35 مل", price: 244 },
+      { label: "55 ml", arLabel: "الحجم 55 مل", price: 319 },
+      { label: "105 ml", arLabel: "الحجم 105 مل", price: 519 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 75 }, 
     ]
   },
 
@@ -35,10 +35,10 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/erba-pura.jpeg",
     variants: [
-      { label: "30 ml", arLabel: "الحجم 30 مل", price: 244 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 319 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 519 },
-      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 }, 
+      { label: "35 ml", arLabel: "الحجم 35 مل", price: 244 },
+      { label: "55 ml", arLabel: "الحجم 55 مل", price: 319 },
+      { label: "105 ml", arLabel: "الحجم 105 مل", price: 519 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 75 }, 
     ]
   },
   {
@@ -51,10 +51,10 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/dior-sauvage.jpeg",
     variants: [
-          { label: "30 ml", arLabel: "الحجم 30 مل", price: 212 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 475 },
-      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
+      { label: "35 ml", arLabel: "الحجم 35 مل", price: 212 },
+      { label: "55 ml", arLabel: "الحجم 55 مل", price: 300 },
+      { label: "105 ml", arLabel: "الحجم105 مل", price: 475 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 75 },
     ]
   },
   {
@@ -67,9 +67,9 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/orto-parisi-megamare.jpeg",
     variants: [
-         { label: "30 ml", arLabel: "الحجم 30 مل", price: 269 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 356 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 544 },
+         { label: "35 ml", arLabel: "الحجم35 مل", price: 269 },
+      { label: "55 ml", arLabel: "الحجم55 مل", price: 356 },
+      { label: "105 ml", arLabel: "الحجم 105 مل", price: 544 },
       { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 75 }, 
     ]
   },
@@ -83,10 +83,10 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/stronger-with-you-intensely.jpeg",
     variants: [
-          { label: "30 ml", arLabel: "الحجم 30 مل", price: 212 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 475 },
-      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
+      { label: "35 ml", arLabel: "الحجم 35 مل", price: 212 },
+      { label: "55 ml", arLabel: "الحجم 55 مل", price: 300 },
+      { label: "105 ml", arLabel: "الحجم105 مل", price: 475 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 75 },
     ]
   },
   {
@@ -99,9 +99,9 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/dior-homme-intense.jpeg",
     variants: [
-         { label: "30 ml", arLabel: "الحجم 30 مل", price: 269 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 356 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 544 },
+         { label: "35 ml", arLabel: "الحجم35 مل", price: 269 },
+      { label: "55 ml", arLabel: "الحجم55 مل", price: 356 },
+      { label: "105 ml", arLabel: "الحجم 105 مل", price: 544 },
       { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 75 }, 
     ]
   },
@@ -115,10 +115,10 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/bianco-latte.jpeg",
     variants: [
-        { label: "30 ml", arLabel: "الحجم 30 مل", price: 212 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 475 },
-      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
+      { label: "35 ml", arLabel: "الحجم 35 مل", price: 212 },
+      { label: "55 ml", arLabel: "الحجم 55 مل", price: 300 },
+      { label: "105 ml", arLabel: "الحجم105 مل", price: 475 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 75 },
     ]
   },
   {
@@ -131,9 +131,9 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/Althaïr-Parfums-de-Marly.jpeg",
     variants: [
-      { label: "30 ml", arLabel: "الحجم 30 مل", price: 269 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 356 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 544 },
+         { label: "35 ml", arLabel: "الحجم35 مل", price: 269 },
+      { label: "55 ml", arLabel: "الحجم55 مل", price: 356 },
+      { label: "105 ml", arLabel: "الحجم 105 مل", price: 544 },
       { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 75 }, 
     ]
   },
@@ -147,10 +147,10 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/vanilla-powder-matiere-premiere.jpeg",
     variants: [
-      { label: "30 ml", arLabel: "الحجم 30 مل", price: 269 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 356 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 544 },
-      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 75 }, 
+         { label: "35 ml", arLabel: "الحجم35 مل", price: 269 },
+      { label: "55 ml", arLabel: "الحجم55 مل", price: 356 },
+      { label: "105 ml", arLabel: "الحجم 105 مل", price: 544 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 75 },  
     ]
   },
     {
@@ -163,10 +163,10 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/Yara-Candy-Lattafa.jpeg",
     variants: [
-      { label: "30 ml", arLabel: "الحجم 30 مل", price: 212 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 475 },
-      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
+      { label: "35 ml", arLabel: "الحجم 35 مل", price: 212 },
+      { label: "55 ml", arLabel: "الحجم 55 مل", price: 300 },
+      { label: "105 ml", arLabel: "الحجم105 مل", price: 475 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 75 },
     ]
   },
     {
@@ -179,10 +179,10 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/Dove.jpeg",
     variants: [
-      { label: "30 ml", arLabel: "الحجم 30 مل", price: 212 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 475 },
-      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
+      { label: "35 ml", arLabel: "الحجم 35 مل", price: 212 },
+      { label: "55 ml", arLabel: "الحجم 55 مل", price: 300 },
+      { label: "105 ml", arLabel: "الحجم105 مل", price: 475 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 75 },
     ]
   },
     {
@@ -195,10 +195,10 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/Pomegranate-Musk.jpeg",
     variants: [
-      { label: "30 ml", arLabel: "الحجم 30 مل", price: 212 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 475 },
-      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
+      { label: "35 ml", arLabel: "الحجم 35 مل", price: 212 },
+      { label: "55 ml", arLabel: "الحجم 55 مل", price: 300 },
+      { label: "105 ml", arLabel: "الحجم105 مل", price: 475 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 75 },
     ]
   },
     {
@@ -211,10 +211,10 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/Omani-Oud.jpeg",
     variants: [
-      { label: "30 ml", arLabel: "الحجم 30 مل", price: 212 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 475 },
-      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
+      { label: "35 ml", arLabel: "الحجم 35 مل", price: 212 },
+      { label: "55 ml", arLabel: "الحجم 55 مل", price: 300 },
+      { label: "105 ml", arLabel: "الحجم105 مل", price: 475 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 75 },
     ]
   },
     {
@@ -227,10 +227,10 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/Oud-Bouquet.jpeg",
     variants: [
-      { label: "30 ml", arLabel: "الحجم 30 مل", price: 212 },
-      { label: "50 ml", arLabel: "الحجم 50 مل", price: 300 },
-      { label: "100 ml", arLabel: "الحجم 100 مل", price: 475 },
-      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 63 },
+      { label: "35 ml", arLabel: "الحجم 35 مل", price: 212 },
+      { label: "55 ml", arLabel: "الحجم 55 مل", price: 300 },
+      { label: "105 ml", arLabel: "الحجم105 مل", price: 475 },
+      { label: "Tester 10 ml", arLabel: "تستر 10 مل", price: 75 },
     ]
   },
   {
@@ -243,7 +243,7 @@ const PRODUCTS = [
     badge: "New",
     img: "assets/products/Taraf-Discovery-Samples.jpeg",
     variants: [
-        { label: "50 ml", arLabel: "الحجم 50 مل", price: 281 }, 
+        { label: "50 ml", arLabel: "الحجم 50 مل", price: 312 }, 
     ]
   },
 ];
